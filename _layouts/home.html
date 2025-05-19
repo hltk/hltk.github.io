@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <h2>Welcome</h2>
+  
+  <section class="intro-section">
+    <div class="intro-text">
+      <p>Hi, I'm Henrik Aalto, a programmer from Helsinki, Finland.</p>
+      
+      <p>I hold a Bachelor of Science in Mathematics from Aalto University and currently serve as a Machine Learning Team Lead at Hamina Wireless, where I develop computer vision solutions.</p>
+      
+      <!-- <p>My achievements include an IOI silver medal, BOI gold medal, and winning the NCPC. I also coach Finland's competitive programming team.</p> -->
+      
+      <a href="{{ '/about' | relative_url }}" class="about-link">About Me →</a>
+    </div>
+    
+    <div class="featured-image">
+      <img src="{{ "/assets/images/landscape.webp" | relative_url }}" alt="Landscape photo" class="img-responsive" width="600">
+    </div>
+  </section>
+
+  {%- if site.posts.size > 0 -%}
+    <section class="posts-section">
+      <h2>Posts</h2>
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+    </section>
+  {%- endif -%}
+
+</div> 
