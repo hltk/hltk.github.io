@@ -31,7 +31,6 @@ linkedin_username: henrik-aalto
 
 header_pages:
   - thesis.md
-  - about.html
 
 # Build settings
 # theme: minima
