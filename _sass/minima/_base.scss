@@ -103,7 +103,7 @@ a {
   text-decoration: underline;
   text-decoration-color: $color-border-medium;
   text-underline-offset: 2px;
-  transition: text-decoration-color 0.2s ease;
+  transition: text-decoration-color 0.3s ease;
 
   &:visited {
     color: $color-text-secondary;
@@ -149,7 +149,6 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border: 1px solid $color-border-light;
-  border-radius: 3px;
   background-color: $color-code-bg;
 }
 
