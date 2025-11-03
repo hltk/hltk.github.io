@@ -294,10 +294,28 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   margin-bottom: var(--spacing-sm);
   gap: var(--spacing-md);
+  position: relative;
+  
+  // Full-width background dotted line using ::before for opacity control
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(var(--spacing-sm) + 1px);
+    height: 1px;
+    background-image: linear-gradient(to right, var(--color-text-tertiary) 60%, transparent 60%);
+    background-size: 12px 1px;
+    background-repeat: repeat-x;
+    opacity: 0.25;
+    z-index: 0;
+  }
   
   .resume-left {
     flex: 0 1 auto;
     order: 1;
+    position: relative;
+    z-index: 1;
   }
   
   .resume-right {
@@ -305,19 +323,8 @@ h1, h2, h3, h4, h5, h6 {
     order: 3;
     text-align: right;
     line-height: var(--line-height-tight);
-  }
-  
-  // Modern dotted line between left and right sections
-  &::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background-image: linear-gradient(to right, var(--color-text-tertiary) 60%, transparent 60%);
-    background-size: 12px 1px;
-    background-repeat: repeat-x;
-    margin: calc(var(--spacing-sm) + 1px) var(--spacing-sm) 0;
-    order: 2;
-    opacity: 0.25;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -329,6 +336,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-normal);
   font-variant-numeric: tabular-nums;
   color: var(--color-text-tertiary);
+  background-color: var(--color-bg);
+  padding: 0 var(--spacing-sm);
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
 }
 
 // Organization/institution name
@@ -338,9 +350,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   font-weight: var(--font-weight-medium);
   margin: 0;
-  padding: 0;
+  padding: 0 var(--spacing-sm);
   color: var(--color-text-primary);
   line-height: var(--line-height-tight);
+  background-color: var(--color-bg);
+  position: relative;
+  width: fit-content;
 }
 
 // Position/title - tightly coupled below org name
@@ -350,6 +365,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2px 0 0 0;
   color: var(--color-text-secondary);
   font-style: italic;
+  background-color: var(--color-bg);
+  padding: 0 var(--spacing-sm);
+  position: relative;
+  width: fit-content;
 }
 
 // Location info
@@ -357,6 +376,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin-top: 2px;
   color: var(--color-text-tertiary);
+  background-color: var(--color-bg);
+  padding: 0 var(--spacing-sm);
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
 }
 
 // Details/bullet points
