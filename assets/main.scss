@@ -176,6 +176,16 @@ h1, h2, h3, h4, h5, h6 {
     flex-basis: 100%;
   }
   
+  .about-section .featured-image {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-section .featured-image img {
+    margin: 0 auto;
+    display: block;
+  }
+  
   .page-content .intro-section {
     flex-direction: column;
   }
