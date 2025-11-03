@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
+  padding-top: $spacing-unit;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -38,10 +38,16 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+    transition: color 0.3s ease;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:hover {
+      color: darken($text-color, 30%);
+      text-decoration: none;
     }
   }
 
@@ -250,5 +256,110 @@
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
+  }
+}
+
+
+
+/**
+ * Projects page
+ */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-unit * 2;
+  margin-top: $spacing-unit;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-unit * 1.5;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-unit / 2;
+}
+
+.project-title {
+  @include relative-font-size(1.75);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.project-description {
+  @include relative-font-size(1);
+  color: $grey-color-dark;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: $spacing-unit;
+  flex-wrap: wrap;
+}
+
+.project-language {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: $small-font-size;
+  font-weight: 500;
+  
+  &.rust {
+    background-color: #dea584;
+    color: #000;
+  }
+  
+  &.go {
+    background-color: #00add8;
+    color: #fff;
+  }
+  
+  &.cpp {
+    background-color: #f34b7d;
+    color: #fff;
+  }
+  
+  &.python {
+    background-color: #3572a5;
+    color: #fff;
+  }
+}
+
+.project-link {
+  color: $brand-color;
+  text-decoration: none;
+  font-weight: 500;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.project-image {
+  flex-shrink: 0;
+  width: 300px;
+  height: 225px;
+  
+  @include media-query($on-palm) {
+    width: 100%;
+    height: auto;
+  }
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
   }
 }
