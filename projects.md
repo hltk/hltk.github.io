@@ -9,7 +9,7 @@ hide_title: true
   <div class="project-item">
     <div class="project-info">
       <h2 class="project-title">gitgo</h2>
-      <p class="project-description">Web interface for Git repositories written in Go 🐳</p>
+      <p class="project-description">Static site generator for Git repositories. Creates a fast and beautiful web interface for browsing code, with no server-side processing or JavaScript required 🐳</p>
       <div class="project-meta">
         <span class="project-language go">Go</span>
         <a href="https://github.com/hltk/gitgo" target="_blank" class="project-link">GitHub</a>
