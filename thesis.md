@@ -2,6 +2,7 @@
 layout: default
 title: Thesis
 permalink: /thesis/
+hide_title: true
 ---
 
 <div class="home">

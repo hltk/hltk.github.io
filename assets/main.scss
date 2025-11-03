@@ -193,3 +193,274 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
+
+/**
+ * Resume page
+ */
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+// Contact section at top
+.resume-contact {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+    
+    &:hover {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Section spacing - large gaps between sections
+.resume-section {
+  margin-bottom: 80px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  // Section headers - small and subtle
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+  }
+}
+
+// Individual resume items (jobs, education, etc)
+.resume-item {
+  margin-bottom: 20px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Header with left-right alignment
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 20px;
+  
+  .resume-left {
+    flex: 1;
+  }
+  
+  .resume-right {
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.3;
+  }
+}
+
+// Organization/institution name
+.resume-org {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.3;
+}
+
+// Position/title - tightly coupled below org name
+.resume-position {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 2px 0 0 0;
+  color: #555;
+  font-style: italic;
+}
+
+// Location info
+.resume-location {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-top: 2px;
+}
+
+// Details/bullet points
+.resume-details {
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: 4px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+    font-size: 14px;
+    
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #333;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Coursework section
+.coursework-section {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.coursework-title {
+  margin: 8px 0 4px 0;
+  font-size: 14px;
+  color: #333;
+  
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.coursework-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: 4px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+    
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #333;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Publications list
+.resume-publications {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: 4px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #333;
+    }
+  }
+  
+  strong {
+    font-weight: 500;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+    word-break: break-all;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Awards/competitions list
+.resume-awards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: 4px;
+    padding-left: 20px;
+    position: relative;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #333;
+    }
+  }
+  
+  strong {
+    font-weight: 500;
+  }
+}
+
+// Responsive design for mobile
+@media screen and (max-width: 600px) {
+  .resume-container {
+    font-size: 13px;
+  }
+  
+  .resume-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .resume-right {
+    text-align: left !important;
+  }
+  
+  .resume-section h2 {
+    font-size: 15px;
+  }
+  
+  .resume-org {
+    font-size: 14px;
+  }
+}
