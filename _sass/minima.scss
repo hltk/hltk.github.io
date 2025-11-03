@@ -125,7 +125,7 @@ $on-laptop:        800px !default;
 
 // Fluid typography using clamp
 @mixin fluid-type($min-size, $max-size, $min-vw: 320px, $max-vw: 1200px) {
-  font-size: clamp(#{$min-size}, #{$min-size} + (#{$max-size} - #{$min-size}) * ((100vw - #{$min-vw}) / (#{$max-vw} - #{$min-vw})), #{$max-size});
+  font-size: clamp(#{$min-size}, calc(#{$min-size} + (#{$max-size} - #{$min-size}) * ((100vw - #{$min-vw}) / (#{$max-vw} - #{$min-vw}))), #{$max-size});
 }
 
 // ==========================================================================
