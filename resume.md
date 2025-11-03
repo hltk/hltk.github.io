@@ -21,9 +21,9 @@ hide_title: true
         </div>
       </div>
       <ul class="resume-details">
-        <li>Leading a 9-person machine learning team to deliver computer vision solutions into production.</li>
-        <li>Architected and integrated computer vision algorithms from proof-of-concept (POC) into the core product for automated network planning, processing 10,000+ floor plans per month.</li>
-        <li>Technologies: React, Node, WebGL, Python, PyTorch, C++, Rust.</li>
+        <li>Leading a 9-person machine learning team to deliver computer vision solutions to production.</li>
+        <li>Architected and integrated computer vision algorithms from proof of concept to the core product, enabling automated network planning and processing 10,000+ floor plans per month.</li>
+        <li>Technologies: React, Node.js, WebGL, Python, PyTorch, C++, Rust.</li>
       </ul>
     </div>
 
@@ -39,7 +39,7 @@ hide_title: true
         </div>
       </div>
       <ul class="resume-details">
-        <li>Joined the firm as the 12th employee.</li>
+        <li>Joined as the 12th employee.</li>
         <li>Developed an RF physics simulation library, a 3D graphics engine, ray-tracing simulation modules, and full-stack web and iOS applications.</li>
       </ul>
     </div>
@@ -56,7 +56,7 @@ hide_title: true
         </div>
       </div>
       <ul class="resume-details">
-        <li>Supported delivery of CS-E4595 Competitive Programming, teaching advanced data structures and algorithms.</li>
+        <li>Supported delivery of the CS-E4595: Competitive Programming course, teaching advanced data structures and algorithms.</li>
       </ul>
     </div>
 
@@ -130,7 +130,7 @@ hide_title: true
         <a href="https://doi.org/10.3390/a15080262" target="_blank">https://doi.org/10.3390/a15080262</a>
       </li>
       <li>
-        Almiala I, Aalto H, Kuikka V. <strong>Influence spreading model for partial breakthrough effects on complex networks.</strong> Physica A: Statistical Mechanics and its Applications. 2023; 630:1-26. Article 129244. 
+        Almiala I, Aalto H, Kuikka V. <strong>Influence spreading model for partial breakthrough effects on complex networks.</strong> Physica A: Statistical Mechanics and its Applications. 2023; 630: 1–26. Article 129244. 
         <a href="https://doi.org/10.1016/j.physa.2023.129244" target="_blank">https://doi.org/10.1016/j.physa.2023.129244</a>
       </li>
       <li>
@@ -164,7 +164,7 @@ hide_title: true
     <h2>Competitions</h2>
     <ul class="resume-awards">
       <li><strong>International Olympiad in Informatics (IOI)</strong> — Silver Medal, June 2021</li>
-      <li><strong>Nordic Collegiate Programming Contest 2024 (NCPC, ICPC regional)</strong> — 1st Place, October 2024</li>
+      <li><strong>Nordic Collegiate Programming Contest 2024 (NCPC, ICPC Regional)</strong> — 1st Place, October 2024</li>
       <li><strong>Junction 2023 Hackathon</strong> — "Energy Revolution, now" Challenge Winner, November 2023</li>
       <li><strong>Baltic Olympiad in Informatics (BOI)</strong> — Gold Medal, Overall 5th Place, May 2022</li>
       <li><strong>Finnish National Olympiad in Informatics (MAOL)</strong> — 1st Place, March 2021</li>
@@ -175,7 +175,7 @@ hide_title: true
   <section class="resume-section">
     <h2>Scholarships</h2>
     <ul class="resume-awards">
-      <li>Aalto University, School of Science — Dean's incentive scholarship 2023 and 2024</li>
+      <li>Aalto University, School of Science — Dean's Incentive Scholarship (2023, 2024)</li>
       <li>Aalto University — Scholarship from the Professor E. J. Nyström Fund, December 2024</li>
       <li>Technology Industries of Finland — Scholarship for Outstanding Performance in Advanced Mathematics, June 2021</li>
     </ul>
