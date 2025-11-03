@@ -6,13 +6,13 @@
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 /* Shared utilities */
 %section-divider {
-  padding-bottom: $spacing-md / 2;
-  border-bottom: 1px solid $color-border-light;
+  padding-bottom: calc(var(--spacing-md) / 2);
+  border-bottom: 1px solid var(--color-border-light);
 }
 
 %list-with-bullets {
@@ -21,15 +21,15 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
   
   li {
-    margin-bottom: $spacing-xs;
-    padding-left: $spacing-md;
+    margin-bottom: var(--spacing-xs);
+    padding-left: var(--spacing-md);
     position: relative;
     
-    &:before {
+    &::before {
       content: "•";
       position: absolute;
       left: 0;
-      color: $color-text-primary;
+      color: var(--color-text-primary);
     }
     
     &:last-child {
@@ -77,12 +77,12 @@ h1, h2, h3, h4, h5, h6 {
 .intro-text h2 {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 }
 
 .intro-text p {
   margin-bottom: 1.5rem;
-  line-height: 1.6;
+  line-height: var(--line-height-relaxed);
 }
 
 .intro-text p:last-child {
@@ -92,17 +92,19 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: $color-text-primary;
-  color: white;
+  background-color: transparent;
+  color: var(--color-text-primary);
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #000;
-  text-decoration: none;
+  border: 1px solid var(--color-text-primary);
+  border-radius: 2px;
+  font-weight: var(--font-weight-medium);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-surface);
+    text-decoration: none;
+  }
 }
 
 .posts-section {
@@ -130,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-meta {
   font-size: 0.8rem;
-  color: $color-text-muted;
+  color: var(--color-text-muted);
 }
 
 .post-link {
@@ -191,18 +193,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-link {
   display: inline-block;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 
 .thesis-cover {
-  width: 320px !important;
+  width: 320px;
+  max-width: 100%;
 }
 
 .no-bottom-margin {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
 
@@ -227,36 +230,38 @@ h1, h2, h3, h4, h5, h6 {
 .resume-container {
   max-width: 800px;
   margin: 0 auto;
-  font-size: $font-size-sm;
-  line-height: 1.5;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-base);
 }
 
 // Contact section at top
 .resume-contact {
   text-align: center;
-  margin-bottom: $spacing-lg;
-  padding-bottom: $spacing-md;
-  border-bottom: 1px solid $color-border-light;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border-light);
   
   p {
     margin: 0;
-    font-size: $font-size-sm;
+    font-size: var(--font-size-sm);
   }
   
   a {
-    color: $color-text-primary;
-    text-decoration: none;
+    color: var(--color-text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-border-medium);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
     
     &:hover {
-      color: $color-accent-hover;
-      text-decoration: underline;
+      text-decoration-color: var(--color-text-primary);
     }
   }
 }
 
 // Section spacing - large gaps between sections
 .resume-section {
-  margin-bottom: $spacing-xl;
+  margin-bottom: var(--spacing-xl);
   
   &:last-child {
     margin-bottom: 0;
@@ -264,11 +269,11 @@ h1, h2, h3, h4, h5, h6 {
   
   // Section headers - small and subtle
   h2 {
-    font-size: $font-size-base;
-    font-weight: 700;
-    margin: 0 0 $spacing-md 0;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    margin: 0 0 var(--spacing-md) 0;
     padding: 0;
-    color: $color-text-primary;
+    color: var(--color-text-primary);
     text-transform: uppercase;
     letter-spacing: 1px;
     border: none;
@@ -277,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Individual resume items (jobs, education, etc)
 .resume-item {
-  margin-bottom: $spacing-md + 6px;
+  margin-bottom: calc(var(--spacing-md) + var(--spacing-xs));
   
   &:last-child {
     margin-bottom: 0;
@@ -289,8 +294,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: $spacing-sm;
-  gap: $spacing-md;
+  margin-bottom: var(--spacing-sm);
+  gap: var(--spacing-md);
   
   .resume-left {
     flex: 0 1 auto;
@@ -301,18 +306,18 @@ h1, h2, h3, h4, h5, h6 {
     flex: 0 0 auto;
     order: 3;
     text-align: right;
-    line-height: 1.3;
+    line-height: var(--line-height-tight);
   }
   
-  // Dotted line between left and right sections
+  // Modern dotted line between left and right sections
   &::after {
     content: '';
     flex: 1;
     height: 1px;
-    background-image: linear-gradient(to right, $color-text-tertiary 60%, transparent 60%);
+    background-image: linear-gradient(to right, var(--color-text-tertiary) 60%, transparent 60%);
     background-size: 12px 1px;
     background-repeat: repeat-x;
-    margin: 9px $spacing-sm 0;
+    margin: calc(var(--spacing-sm) + 1px) var(--spacing-sm) 0;
     order: 2;
     opacity: 0.25;
   }
@@ -320,32 +325,32 @@ h1, h2, h3, h4, h5, h6 {
 
 // Date info
 .resume-date {
-  font-family: $sans-serif-font-family;
-  font-size: $font-size-sm * 0.92;
+  font-family: var(--font-family-sans);
+  font-size: calc(var(--font-size-sm) * 0.92);
   letter-spacing: -0.025em;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   font-variant-numeric: tabular-nums;
-  color: $color-text-tertiary;
+  color: var(--color-text-tertiary);
 }
 
 // Organization/institution name
 .resume-org {
-  font-family: $sans-serif-font-family;
-  font-size: $font-size-sm;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
   letter-spacing: 0.05em;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   margin: 0;
   padding: 0;
-  color: $color-text-primary;
-  line-height: 1.3;
+  color: var(--color-text-primary);
+  line-height: var(--line-height-tight);
 }
 
 // Position/title - tightly coupled below org name
 .resume-position {
-  font-size: $font-size-sm;
-  font-weight: 400;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
   margin: 2px 0 0 0;
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
   font-style: italic;
 }
 
@@ -358,24 +363,24 @@ h1, h2, h3, h4, h5, h6 {
 // Details/bullet points
 .resume-details {
   @extend %list-with-bullets;
-  margin: $spacing-sm 0 0 0;
+  margin: var(--spacing-sm) 0 0 0;
   
   li {
-    line-height: 1.5;
-    font-size: $font-size-sm;
+    line-height: var(--line-height-base);
+    font-size: var(--font-size-sm);
   }
 }
 
 // Coursework section
 .coursework-section {
-  margin-top: 12px;
-  padding-left: $spacing-md;
+  margin-top: var(--spacing-sm);
+  padding-left: var(--spacing-md);
 }
 
 .coursework-title {
-  margin: $spacing-sm 0 $spacing-xs 0;
-  font-size: $font-size-sm;
-  color: $color-text-primary;
+  margin: var(--spacing-sm) 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
   
   &:first-child {
     margin-top: 0;
@@ -386,18 +391,18 @@ h1, h2, h3, h4, h5, h6 {
   @extend %list-with-bullets;
   
   li {
-    font-size: $font-size-sm;
-    color: $color-text-secondary;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
     line-height: 1.4;
   }
 }
 
 .course-code {
-  font-family: $sans-serif-font-family;
-  font-size: $font-size-sm * 0.92;
+  font-family: var(--font-family-sans);
+  font-size: calc(var(--font-size-sm) * 0.92);
   letter-spacing: -0.025em;
-  font-weight: 400;
-  color: $color-text-secondary;
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-secondary);
 }
 
 // Publications list
@@ -405,20 +410,24 @@ h1, h2, h3, h4, h5, h6 {
   @extend %list-with-bullets;
   
   li {
-    line-height: 1.6;
+    line-height: var(--line-height-relaxed);
   }
   
   strong {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
   }
   
   a {
-    color: $color-accent-hover;
-    text-decoration: none;
+    color: var(--color-text-secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-border-medium);
+    text-underline-offset: 2px;
     word-break: break-all;
+    transition: text-decoration-color 0.2s ease;
     
     &:hover {
-      text-decoration: underline;
+      color: var(--color-text-primary);
+      text-decoration-color: var(--color-text-primary);
     }
   }
 }
@@ -428,31 +437,35 @@ h1, h2, h3, h4, h5, h6 {
   @extend %list-with-bullets;
   
   strong {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
   }
 }
 
 // Responsive design for mobile
 @media screen and (max-width: 600px) {
   .resume-container {
-    font-size: $font-size-sm;
+    font-size: var(--font-size-sm);
   }
   
   .resume-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: $spacing-xs;
+    gap: var(--spacing-xs);
+    
+    &::after {
+      display: none;
+    }
   }
   
   .resume-right {
-    text-align: left !important;
+    text-align: left;
   }
   
   .resume-section h2 {
-    font-size: 15px;
+    font-size: calc(var(--font-size-base) - 1px);
   }
   
   .resume-org {
-    font-size: $font-size-sm;
+    font-size: var(--font-size-sm);
   }
 }
