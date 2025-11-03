@@ -63,7 +63,7 @@ hide_title: true
     <div class="resume-item">
       <div class="resume-header">
         <div class="resume-left">
-          <div class="resume-org">Finnish Defence Forces</div>
+          <div class="resume-org">Finnish Defence Research Agency</div>
           <p class="resume-position">Researcher</p>
         </div>
         <div class="resume-right">
@@ -84,7 +84,7 @@ hide_title: true
       <div class="resume-header">
         <div class="resume-left">
           <div class="resume-org">Aalto University</div>
-          <p class="resume-position">Bachelor of Science in Mathematics with a minor in Computer Science</p>
+          <p class="resume-position">B.Sc. in Mathematics, Minor in Computer Science</p>
         </div>
         <div class="resume-right">
           Aug 2022 – Apr 2025
