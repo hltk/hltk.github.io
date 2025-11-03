@@ -30,6 +30,7 @@ github_username: hltk
 linkedin_username: henrik-aalto
 
 header_pages:
+  - projects.md
   - thesis.md
 
 # Build settings

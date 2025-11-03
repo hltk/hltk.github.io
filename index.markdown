@@ -1,11 +1,8 @@
 ---
-layout: home-no-header
-title: Henrik Aalto
+layout: home
 ---
 
 <div class="home">
-  <h1>Henrik Aalto</h1>
-
   <section class="about-section">
     <div class="intro-text">
       <p>Passionate product builder. <strong>IOI</strong> Silver Medalist, <strong>NCPC</strong> Champion, BSc Mathematics from Aalto University.</p>
