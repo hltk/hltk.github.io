@@ -9,6 +9,35 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+/* Shared utilities */
+%section-divider {
+  padding-bottom: $spacing-md / 2;
+  border-bottom: 1px solid $color-border-light;
+}
+
+%list-with-bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: $spacing-xs;
+    padding-left: $spacing-md;
+    position: relative;
+    
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: $color-text-primary;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 /* Custom styles for homepage */
 .intro-section, .about-section {
   margin: 0 0 3rem 0;
@@ -24,8 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .home h2 {
   margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e8e8e8;
+  @extend %section-divider;
 }
 
 .featured-image {
@@ -49,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro-text h2 {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #333;
+  color: $color-text-primary;
 }
 
 .intro-text p {
@@ -64,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #333;
+  background-color: $color-text-primary;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -84,8 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .posts-section h2 {
   margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e8e8e8;
+  @extend %section-divider;
 }
 
 .post-list {
@@ -103,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-meta {
   font-size: 0.8rem;
-  color: #828282;
+  color: $color-text-muted;
 }
 
 .post-link {
@@ -164,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-link {
   display: inline-block;
-  color: #333;
+  color: $color-text-primary;
   text-decoration: none;
   font-weight: 500;
 }
@@ -200,28 +227,28 @@ h1, h2, h3, h4, h5, h6 {
 .resume-container {
   max-width: 800px;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: $font-size-sm;
   line-height: 1.5;
 }
 
 // Contact section at top
 .resume-contact {
   text-align: center;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: $spacing-lg;
+  padding-bottom: $spacing-md;
+  border-bottom: 1px solid $color-border-light;
   
   p {
     margin: 0;
-    font-size: 14px;
+    font-size: $font-size-sm;
   }
   
   a {
-    color: #333;
+    color: $color-text-primary;
     text-decoration: none;
     
     &:hover {
-      color: #0066cc;
+      color: $color-accent-hover;
       text-decoration: underline;
     }
   }
@@ -229,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Section spacing - large gaps between sections
 .resume-section {
-  margin-bottom: 80px;
+  margin-bottom: $spacing-xl;
   
   &:last-child {
     margin-bottom: 0;
@@ -237,11 +264,11 @@ h1, h2, h3, h4, h5, h6 {
   
   // Section headers - small and subtle
   h2 {
-    font-size: 16px;
+    font-size: $font-size-base;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 0 0 $spacing-md 0;
     padding: 0;
-    color: #333;
+    color: $color-text-primary;
     text-transform: uppercase;
     letter-spacing: 1px;
     border: none;
@@ -250,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Individual resume items (jobs, education, etc)
 .resume-item {
-  margin-bottom: 20px;
+  margin-bottom: $spacing-md;
   
   &:last-child {
     margin-bottom: 0;
@@ -262,8 +289,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 8px;
-  gap: 20px;
+  margin-bottom: $spacing-sm;
+  gap: $spacing-md;
   
   .resume-left {
     flex: 1;
@@ -272,8 +299,8 @@ h1, h2, h3, h4, h5, h6 {
   .resume-right {
     flex-shrink: 0;
     text-align: right;
-    font-size: 13px;
-    color: #666;
+    font-size: $font-size-sm;
+    color: $color-text-tertiary;
     line-height: 1.3;
   }
 }
@@ -284,63 +311,48 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: $color-text-primary;
   line-height: 1.3;
 }
 
 // Position/title - tightly coupled below org name
 .resume-position {
-  font-size: 14px;
+  font-size: $font-size-sm;
   font-weight: 400;
   margin: 2px 0 0 0;
-  color: #555;
+  color: $color-text-secondary;
   font-style: italic;
 }
 
 // Location info
 .resume-location {
   display: block;
-  font-size: 13px;
-  color: #666;
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
   margin-top: 2px;
 }
 
 // Details/bullet points
 .resume-details {
-  margin: 8px 0 0 0;
-  padding: 0;
-  list-style: none;
+  @extend %list-with-bullets;
+  margin: $spacing-sm 0 0 0;
   
   li {
-    margin-bottom: 4px;
-    padding-left: 20px;
-    position: relative;
     line-height: 1.5;
-    font-size: 14px;
-    
-    &:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #333;
-    }
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
+    font-size: $font-size-sm;
   }
 }
 
 // Coursework section
 .coursework-section {
   margin-top: 12px;
-  padding-left: 20px;
+  padding-left: $spacing-md;
 }
 
 .coursework-title {
-  margin: 8px 0 4px 0;
-  font-size: 14px;
-  color: #333;
+  margin: $spacing-sm 0 $spacing-xs 0;
+  font-size: $font-size-sm;
+  color: $color-text-primary;
   
   &:first-child {
     margin-top: 0;
@@ -348,53 +360,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .coursework-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @extend %list-with-bullets;
   
   li {
-    margin-bottom: 4px;
-    padding-left: 20px;
-    position: relative;
-    font-size: 13px;
-    color: #555;
+    font-size: $font-size-sm;
+    color: $color-text-secondary;
     line-height: 1.4;
-    
-    &:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #333;
-    }
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 
 // Publications list
 .resume-publications {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @extend %list-with-bullets;
   
   li {
-    margin-bottom: 4px;
-    padding-left: 20px;
-    position: relative;
     line-height: 1.6;
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-    
-    &:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #333;
-    }
   }
   
   strong {
@@ -402,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   a {
-    color: #0066cc;
+    color: $color-accent-hover;
     text-decoration: none;
     word-break: break-all;
     
@@ -414,26 +394,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Awards/competitions list
 .resume-awards {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  
-  li {
-    margin-bottom: 4px;
-    padding-left: 20px;
-    position: relative;
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-    
-    &:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #333;
-    }
-  }
+  @extend %list-with-bullets;
   
   strong {
     font-weight: 500;
@@ -443,13 +404,13 @@ h1, h2, h3, h4, h5, h6 {
 // Responsive design for mobile
 @media screen and (max-width: 600px) {
   .resume-container {
-    font-size: 13px;
+    font-size: $font-size-sm;
   }
   
   .resume-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
+    gap: $spacing-xs;
   }
   
   .resume-right {
@@ -461,6 +422,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .resume-org {
-    font-size: 14px;
+    font-size: $font-size-sm;
   }
 }

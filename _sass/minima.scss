@@ -1,28 +1,53 @@
 @charset "utf-8";
 
-// Define defaults for each variable.
-
+// Typography
 $base-font-family: "Spectral", Georgia, Cambria, "Times New Roman", Times, serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
+// Font sizes - consolidated scale (13px → 14px)
+$font-size-xs:     14px !default;  // Was 13px, now consolidated
+$font-size-sm:     14px !default;
+$font-size-base:   16px !default;
+$font-size-md:     18px !default;
+$font-size-lg:     24px !default;
+$font-size-xl:     32px !default;
+
+// Spacing scale - based on 30px unit
 $spacing-unit:     30px !default;
+$spacing-xs:       4px !default;   // spacing-unit / 7.5
+$spacing-sm:       8px !default;   // spacing-unit / 3.75
+$spacing-md:       20px !default;  // spacing-unit / 1.5
+$spacing-lg:       40px !default;  // spacing-unit * 1.33
+$spacing-xl:       80px !default;  // spacing-unit * 2.66
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+// Color system - semantic grayscale
+$color-bg:              #fdfdfd !default;
+$color-surface:         #ffffff !default;
+$color-text-primary:    #111 !default;
+$color-text-secondary:  #555 !default;
+$color-text-tertiary:   #666 !default;
+$color-text-muted:      #828282 !default;
+$color-border-light:    #e8e8e8 !default;
+$color-border-medium:   #ddd !default;
+$color-accent:          #2a7ae2 !default;
+$color-accent-hover:    #0066cc !default;
 
-$grey-color:       #828282 !default;
+// Legacy variable mappings (for backwards compatibility)
+$text-color:       $color-text-primary !default;
+$background-color: $color-bg !default;
+$brand-color:      $color-accent !default;
+$grey-color:       $color-text-muted !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
+$small-font-size:  $font-size-sm !default;
 
+// Layout
+$content-width:    800px !default;
 $table-text-align: left !default;
 
-// Width of the content area
-$content-width:    800px !default;
-
+// Breakpoints
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
