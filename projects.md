@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
+hide_title: true
 ---
 
 <div class="projects-container">
