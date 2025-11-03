@@ -98,25 +98,25 @@ hide_title: true
       <div class="coursework-section">
         <p class="coursework-title"><strong>Computer Science Coursework</strong></p>
         <ul class="coursework-list">
-          <li>Machine Learning (CS-C3240)</li>
-          <li>Computer Graphics (CS-C3100)</li>
-          <li>Data Structures and Algorithms (CS-A1140)</li>
-          <li>Programming Parallel Computers (CS-E4580)</li>
-          <li>Theory of Computation (CS-C2161)</li>
-          <li>Competitive Programming (CS-E4595)</li>
-          <li>User-Centered Product Development (SCI-C1002)</li>
+          <li><span class="course-code">CS-C3240:</span> Machine Learning</li>
+          <li><span class="course-code">CS-C3100:</span> Computer Graphics</li>
+          <li><span class="course-code">CS-A1140:</span> Data Structures and Algorithms</li>
+          <li><span class="course-code">CS-E4580:</span> Programming Parallel Computers</li>
+          <li><span class="course-code">CS-C2161:</span> Theory of Computation</li>
+          <li><span class="course-code">CS-E4595:</span> Competitive Programming</li>
+          <li><span class="course-code">SCI-C1002:</span> User-Centered Product Development</li>
         </ul>
         <p class="coursework-title"><strong>Mathematics Coursework</strong></p>
         <ul class="coursework-list">
-          <li>Abstract Algebra (MS-C1081)</li>
-          <li>Linear Algebra (MS-C1342)</li>
-          <li>Optimization (MS-C2105)</li>
-          <li>Partial Differential Equations (MS-C1350)</li>
-          <li>Metric Spaces (MS-C1541)</li>
-          <li>Discrete Mathematics (MS-A0401)</li>
-          <li>Complex Analysis (MS-C1300)</li>
-          <li>Fourier Analysis (MS-C1420)</li>
-          <li>Probability & Statistics (MS-A0501)</li>
+          <li><span class="course-code">MS-C1081:</span> Abstract Algebra</li>
+          <li><span class="course-code">MS-C1342:</span> Linear Algebra</li>
+          <li><span class="course-code">MS-C2105:</span> Optimization</li>
+          <li><span class="course-code">MS-C1350:</span> Partial Differential Equations</li>
+          <li><span class="course-code">MS-C1541:</span> Metric Spaces</li>
+          <li><span class="course-code">MS-A0401:</span> Discrete Mathematics</li>
+          <li><span class="course-code">MS-C1300:</span> Complex Analysis</li>
+          <li><span class="course-code">MS-C1420:</span> Fourier Analysis</li>
+          <li><span class="course-code">MS-A0501:</span> Probability & Statistics</li>
         </ul>
       </div>
     </div>
