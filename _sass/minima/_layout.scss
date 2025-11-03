@@ -4,9 +4,15 @@
 .site-header {
   min-height: $spacing-unit * 1.865;
   padding-top: $spacing-unit;
-
-  // Positioning context for the mobile navigation icon
   position: relative;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: $spacing-md;
 }
 
 .site-title {
@@ -15,93 +21,29 @@
   line-height: $base-line-height * $font-size-base * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
 
   &,
   &:visited {
-    color: darken($color-text-muted, 25%);
+    color: $color-header-text;
   }
 }
 
 .site-nav {
-  float: right;
-  line-height: $base-line-height * $font-size-base * 2.25;
-
-  .nav-trigger {
-      display: none;
-  }
-
-  .menu-icon {
-    display: none;
-  }
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  flex-wrap: wrap;
 
   .page-link {
     color: $color-text-primary;
     line-height: $base-line-height;
-    transition: color 0.3s ease;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: $spacing-md;
-    }
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    font-family: $sans-serif-font-family;
 
     &:hover {
-      color: darken($color-text-primary, 30%);
+      opacity: 0.6;
       text-decoration: none;
-    }
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $color-bg;
-    border: 1px solid $color-border-light;
-    border-radius: 5px;
-    text-align: right;
-
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-    }
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        fill: darken($color-text-muted, 25%);
-      }
-    }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: $spacing-md;
     }
   }
 }
@@ -130,49 +72,40 @@
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $color-text-muted;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
+  display: grid;
+  grid-template-columns: 35% 20% 45%;
+  gap: $spacing-unit;
 }
 
 .footer-col {
-  float: left;
   margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
+  .footer-col-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "col1 col2"
+      "col3 col3";
   }
-
+  
+  .footer-col-1 {
+    grid-area: col1;
+  }
+  
+  .footer-col-2 {
+    grid-area: col2;
+  }
+  
   .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    grid-area: col3;
   }
 }
 
 @include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+  .footer-col-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 
@@ -298,7 +231,7 @@
 
 .project-description {
   @include relative-font-size(1);
-  color: darken($color-text-muted, 25%);
+  color: $color-text-secondary;
   margin-bottom: 0;
   line-height: 1.6;
 }
@@ -316,35 +249,21 @@
   border-radius: 12px;
   font-size: $font-size-sm;
   font-weight: 500;
-  
-  &.rust {
-    background-color: #dea584;
-    color: #000;
-  }
-  
-  &.go {
-    background-color: #00add8;
-    color: #fff;
-  }
-  
-  &.cpp {
-    background-color: #f34b7d;
-    color: #fff;
-  }
-  
-  &.python {
-    background-color: #3572a5;
-    color: #fff;
-  }
+  background-color: $color-border-light;
+  color: $color-text-secondary;
+  border: 1px solid $color-border-medium;
 }
 
 .project-link {
-  color: $color-accent;
-  text-decoration: none;
+  color: $color-text-primary;
+  text-decoration: underline;
+  text-decoration-color: $color-border-medium;
+  text-underline-offset: 2px;
   font-weight: 500;
+  transition: text-decoration-color 0.2s ease;
   
   &:hover {
-    text-decoration: underline;
+    text-decoration-color: $color-text-primary;
   }
 }
 
