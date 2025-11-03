@@ -16,7 +16,7 @@ hide_title: true
       </div>
     </div>
     <div class="project-image">
-      <img src="{{ '/assets/images/gitgo.png' | relative_url }}" alt="gitgo screenshot" />
+      <img src="/assets/images/gitgo.png" alt="gitgo screenshot" />
     </div>
   </div>
 
@@ -30,7 +30,7 @@ hide_title: true
       </div>
     </div>
     <div class="project-image">
-      <img src="{{ '/assets/images/rustgrad.png' | relative_url }}" alt="rustgrad plot" />
+      <img src="/assets/images/rustgrad.png" alt="rustgrad plot" />
     </div>
   </div>
 
