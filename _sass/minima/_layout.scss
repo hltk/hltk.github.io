@@ -249,15 +249,20 @@
 
 .project-link {
   font-family: var(--font-family-sans);
-  color: $color-text-primary;
+  color: $color-header-text;
   text-decoration: underline;
   text-decoration-color: $color-border-medium;
   text-underline-offset: 2px;
   font-weight: 500;
-  transition: text-decoration-color 0.3s ease;
+  transition: text-decoration-color 0.3s ease, opacity 0.3s ease;
+  
+  &:visited {
+    color: $color-header-text;
+  }
   
   &:hover {
-    text-decoration-color: $color-text-primary;
+    opacity: 0.6;
+    text-decoration-color: $color-header-text;
   }
 }
 
