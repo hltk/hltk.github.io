@@ -450,4 +450,13 @@ h1, h2, h3, h4, h5, h6 {
 
 // Responsive design for mobile
 @media screen and (max-width: 600px) {
+  .resume-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .resume-right-col {
+    align-items: flex-start;
+    text-align: left;
+  }
 }
