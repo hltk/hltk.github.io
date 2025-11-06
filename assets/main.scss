@@ -302,10 +302,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--spacing-sm);
 }
 
-// Top row: employer, line, date
+// Top row: employer, date
 .resume-top-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--spacing-md);
   white-space: nowrap;
   overflow: hidden;
@@ -320,17 +321,6 @@ h1, h2, h3, h4, h5, h6 {
   gap: var(--spacing-md);
   white-space: nowrap;
   overflow: hidden;
-}
-
-// Line element that grows to fill space
-.resume-line {
-  flex: 1;
-  height: 1px;
-  background-image: linear-gradient(to right, var(--color-text-tertiary) 60%, transparent 60%);
-  background-size: 12px 1px;
-  background-repeat: repeat-x;
-  opacity: 0.25;
-  min-width: 20px;
 }
 
 // Date info
@@ -459,7 +449,4 @@ h1, h2, h3, h4, h5, h6 {
 
 // Responsive design for mobile
 @media screen and (max-width: 600px) {
-  .resume-line {
-    opacity: 0;
-  }
 }
