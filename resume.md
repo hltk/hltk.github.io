@@ -11,12 +11,12 @@ hide_title: true
     
     <div class="resume-item">
       <div class="resume-header">
-        <div class="resume-top-row">
+        <div class="resume-left-col">
           <div class="resume-org">Hamina Wireless</div>
-          <span class="resume-date">Jan 2025 – Present</span>
-        </div>
-        <div class="resume-bottom-row">
           <p class="resume-position">Machine Learning Team Lead</p>
+        </div>
+        <div class="resume-right-col">
+          <span class="resume-date">Jan 2025 – Present</span>
           <span class="resume-location">Helsinki, Finland</span>
         </div>
       </div>
@@ -29,12 +29,12 @@ hide_title: true
 
     <div class="resume-item">
       <div class="resume-header">
-        <div class="resume-top-row">
+        <div class="resume-left-col">
           <div class="resume-org">Hamina Wireless</div>
-          <span class="resume-date">Nov 2022 – Jan 2025</span>
-        </div>
-        <div class="resume-bottom-row">
           <p class="resume-position">Software Developer</p>
+        </div>
+        <div class="resume-right-col">
+          <span class="resume-date">Nov 2022 – Jan 2025</span>
           <span class="resume-location">Helsinki, Finland</span>
         </div>
       </div>
@@ -46,12 +46,12 @@ hide_title: true
 
     <div class="resume-item">
       <div class="resume-header">
-        <div class="resume-top-row">
+        <div class="resume-left-col">
           <div class="resume-org">Aalto University</div>
-          <span class="resume-date">Sep 2023 – Nov 2023</span>
-        </div>
-        <div class="resume-bottom-row">
           <p class="resume-position">Teaching Assistant</p>
+        </div>
+        <div class="resume-right-col">
+          <span class="resume-date">Sep 2023 – Nov 2023</span>
           <span class="resume-location">Espoo, Finland</span>
         </div>
       </div>
@@ -62,12 +62,12 @@ hide_title: true
 
     <div class="resume-item">
       <div class="resume-header">
-        <div class="resume-top-row">
+        <div class="resume-left-col">
           <div class="resume-org">Finnish Defence Research Agency</div>
-          <span class="resume-date">Jan 2022 – Sep 2022</span>
-        </div>
-        <div class="resume-bottom-row">
           <p class="resume-position">Researcher</p>
+        </div>
+        <div class="resume-right-col">
+          <span class="resume-date">Jan 2022 – Sep 2022</span>
         </div>
       </div>
       <ul class="resume-details">
@@ -82,12 +82,12 @@ hide_title: true
     <h2>Education</h2>
     <div class="resume-item">
       <div class="resume-header">
-        <div class="resume-top-row">
+        <div class="resume-left-col">
           <div class="resume-org">Aalto University</div>
-          <span class="resume-date">Aug 2022 – Apr 2025</span>
-        </div>
-        <div class="resume-bottom-row">
           <p class="resume-position">B.Sc. in Mathematics, Minor in Computer Science</p>
+        </div>
+        <div class="resume-right-col">
+          <span class="resume-date">Aug 2022 – Apr 2025</span>
           <span class="resume-location">Espoo, Finland</span>
         </div>
       </div>
@@ -144,12 +144,12 @@ hide_title: true
     <h2>Leadership & Community</h2>
     <div class="resume-item">
       <div class="resume-header">
-        <div class="resume-top-row">
+        <div class="resume-left-col">
           <div class="resume-org">Finnish IOI Training</div>
-          <span class="resume-date">Oct 2022 – Present</span>
-        </div>
-        <div class="resume-bottom-row">
           <p class="resume-position">Competitive Programming Coach</p>
+        </div>
+        <div class="resume-right-col">
+          <span class="resume-date">Oct 2022 – Present</span>
           <span class="resume-location">Helsinki, Finland</span>
         </div>
       </div>
