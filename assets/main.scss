@@ -129,13 +129,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-meta {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--color-text-muted);
 }
 
 .post-link {
   display: block;
-  font-size: 1.5rem;
+  @include relative-font-size(1.5);
   margin-bottom: 0.5rem;
 }
 
@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 // Date info
 .resume-date {
   font-family: var(--font-family-sans);
-  font-size: calc(var(--font-size-sm) * 0.92);
+  font-size: 0.805rem;
   letter-spacing: -0.025em;
   font-weight: var(--font-weight-normal);
   font-variant-numeric: tabular-nums;
@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .course-code {
   font-family: var(--font-family-sans);
-  font-size: calc(var(--font-size-sm) * 0.92);
+  font-size: 0.805rem;
   letter-spacing: -0.025em;
   font-weight: var(--font-weight-normal);
   color: var(--color-text-secondary);
@@ -474,7 +474,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .resume-section h2 {
-    font-size: calc(var(--font-size-base) - 1px);
+    font-size: 0.9375rem;
   }
   
   .resume-org {
