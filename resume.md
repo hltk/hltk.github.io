@@ -13,7 +13,6 @@ hide_title: true
       <div class="resume-header">
         <div class="resume-top-row">
           <div class="resume-org">Hamina Wireless</div>
-          <div class="resume-line"></div>
           <span class="resume-date">Jan 2025 – Present</span>
         </div>
         <div class="resume-bottom-row">
@@ -32,7 +31,6 @@ hide_title: true
       <div class="resume-header">
         <div class="resume-top-row">
           <div class="resume-org">Hamina Wireless</div>
-          <div class="resume-line"></div>
           <span class="resume-date">Nov 2022 – Jan 2025</span>
         </div>
         <div class="resume-bottom-row">
@@ -50,7 +48,6 @@ hide_title: true
       <div class="resume-header">
         <div class="resume-top-row">
           <div class="resume-org">Aalto University</div>
-          <div class="resume-line"></div>
           <span class="resume-date">Sep 2023 – Nov 2023</span>
         </div>
         <div class="resume-bottom-row">
@@ -67,7 +64,6 @@ hide_title: true
       <div class="resume-header">
         <div class="resume-top-row">
           <div class="resume-org">Finnish Defence Research Agency</div>
-          <div class="resume-line"></div>
           <span class="resume-date">Jan 2022 – Sep 2022</span>
         </div>
         <div class="resume-bottom-row">
@@ -88,7 +84,6 @@ hide_title: true
       <div class="resume-header">
         <div class="resume-top-row">
           <div class="resume-org">Aalto University</div>
-          <div class="resume-line"></div>
           <span class="resume-date">Aug 2022 – Apr 2025</span>
         </div>
         <div class="resume-bottom-row">
@@ -151,7 +146,6 @@ hide_title: true
       <div class="resume-header">
         <div class="resume-top-row">
           <div class="resume-org">Finnish IOI Training</div>
-          <div class="resume-line"></div>
           <span class="resume-date">Oct 2022 – Present</span>
         </div>
         <div class="resume-bottom-row">
