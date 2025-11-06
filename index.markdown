@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Henrik Aalto
+hide_title: true
 ---
 
 <div class="home">
