@@ -297,30 +297,31 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Header with two rows
+// Header with two columns
 .resume-header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-md);
   margin-bottom: var(--spacing-sm);
 }
 
-// Top row: employer, date
-.resume-top-row {
+// Left column: organization and position
+.resume-left-col {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-md);
-  white-space: nowrap;
-  overflow: hidden;
-  margin-bottom: 2px;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
 }
 
-// Bottom row: title, location
-.resume-bottom-row {
+// Right column: date and location
+.resume-right-col {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-md);
-  white-space: nowrap;
-  overflow: hidden;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-end;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 // Date info
