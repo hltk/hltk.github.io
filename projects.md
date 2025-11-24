@@ -23,6 +23,22 @@ hide_title: true
 
   <div class="project-item">
     <div class="project-info">
+      <h2 class="project-title">The Sylow Theorems and Classification of Finite Groups</h2>
+      <p class="project-description">69-page bachelor's thesis presenting a comprehensive classification of finite groups of orders 1-20, examining their structure through the Sylow theorems and fundamental group-theoretic results.</p>
+      <div class="project-meta">
+        <span class="project-language mathematics">Mathematics</span>
+        <span class="project-year">2025</span>
+        <a href="/thesis/" class="project-link">Thesis Page</a>
+        <a href="https://aaltodoc.aalto.fi/items/0b03ed44-8d34-4d2b-8265-90494e87ba5b" target="_blank" class="project-link">Aaltodoc</a>
+      </div>
+    </div>
+    <div class="project-image">
+      <img src="/assets/images/thesis.png" alt="Bachelor's thesis cover" />
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-info">
       <h2 class="project-title">gitgo</h2>
       <p class="project-description">Static site generator for Git repositories. Creates a fast and beautiful web interface for browsing code, with no server-side processing or JavaScript required.</p>
       <div class="project-meta">
