@@ -289,15 +289,15 @@
   border: 1px solid rgba(24, 30, 43, 0.08);
   box-shadow:
     /* Central contact patch sitting close to the surface */
-    0 10px 16px -9px rgba(15, 23, 42, 0.25),
+    0 10px 16px -9px rgba(15, 23, 42, 0.15),
     /* General body shadow */
-    0 18px 28px rgba(15, 23, 42, 0.15),
+    0 18px 28px rgba(15, 23, 42, 0.10),
     /* Left corner lifted slightly higher */
-    -20px 24px 34px rgba(15, 23, 42, 0.12),
+    -20px 24px 34px rgba(15, 23, 42, 0.08),
     /* Right corner lifted with a longer falloff */
-    20px 26px 40px rgba(15, 23, 42, 0.18),
+    20px 26px 40px rgba(15, 23, 42, 0.12),
     /* Ambient softness */
-    0 36px 50px rgba(15, 23, 42, 0.08),
+    0 36px 50px rgba(15, 23, 42, 0.05),
     /* Highlight edge */
     inset 0 1px 0 rgba(255, 255, 255, 0.6);
   transform-origin: 55% 80%;
