@@ -2,11 +2,14 @@
  * Site header
  */
 .site-header {
-  min-height: $spacing-unit * 1.865;
   padding: 120px 0 $spacing-unit 0;
   position: relative;
   display: flex;
   align-items: center;
+
+  @include media-query($on-palm) {
+    padding-top: 60px;
+  }
 }
 
 .header-content {
@@ -68,7 +71,7 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-lg 0 $spacing-unit 0;
+  padding: $spacing-unit 0;
 }
 
 .footer-links {
