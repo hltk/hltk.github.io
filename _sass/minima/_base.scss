@@ -107,6 +107,7 @@ a {
   text-decoration: underline;
   text-decoration-color: var(--color-border-medium);
   text-underline-offset: 2px;
+  transition: color 0.25s ease, text-decoration-color 0.25s ease;
 
   &:visited {
     color: var(--color-text-primary);

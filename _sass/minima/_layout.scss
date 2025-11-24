@@ -48,7 +48,7 @@
     text-decoration: underline;
     text-decoration-color: var(--color-border-medium);
     text-underline-offset: 2px;
-    transition: opacity 0.3s ease;
+    transition: color 0.25s ease, text-decoration-color 0.25s ease, opacity 0.25s ease;
 
     &:visited {
       color: var(--color-text-primary);
@@ -88,7 +88,7 @@
     gap: 4px;
     text-decoration: none;
     color: var(--color-text-muted);
-    transition: color 0.3s ease;
+    transition: color 0.25s ease;
     
     &:hover {
       color: var(--color-text-secondary);
@@ -227,7 +227,7 @@
   text-decoration-color: var(--color-border-medium);
   text-underline-offset: 2px;
   font-size: var(--font-size-sm);
-  transition: text-decoration-color 0.3s ease;
+  transition: color 0.25s ease, text-decoration-color 0.25s ease;
   
   &:visited {
     color: var(--color-text-secondary);
@@ -235,6 +235,7 @@
   }
   
   &:hover {
+    color: var(--color-text-primary);
     text-decoration-color: var(--color-text-primary);
   }
 }
