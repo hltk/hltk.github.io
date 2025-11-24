@@ -326,9 +326,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Date info
 .resume-date {
-  font-family: var(--font-family-sans);
-  font-size: 0.805rem;
-  letter-spacing: -0.025em;
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-normal);
   font-variant-numeric: tabular-nums;
   color: var(--color-text-tertiary);
@@ -338,9 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Organization/institution name
 .resume-org {
-  font-family: var(--font-family-sans);
   font-size: var(--font-size-sm);
-  letter-spacing: 0.05em;
   font-weight: var(--font-weight-medium);
   margin: 0;
   color: var(--color-text-primary);
@@ -405,9 +401,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .course-code {
-  font-family: var(--font-family-sans);
-  font-size: 0.805rem;
-  letter-spacing: -0.025em;
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-normal);
   color: var(--color-text-secondary);
 }
