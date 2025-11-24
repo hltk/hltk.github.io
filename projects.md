@@ -8,6 +8,20 @@ hide_title: true
 <div class="projects-container">
   <div class="project-item">
     <div class="project-info">
+      <h2 class="project-title">Hamina 3D View</h2>
+      <p class="project-description">Custom WebGL 3D engine for performant and accurate building visualization, featuring custom SSAO and WBOIT implementations.</p>
+      <div class="project-meta">
+        <span class="project-language webgl">WebGL, React</span>
+        <a href="https://www.linkedin.com/posts/henrik-aalto_five-features-five-days-last-week-we-announced-activity-7350464157084725250-NQlC" target="_blank" class="project-link">Post</a>
+      </div>
+    </div>
+    <div class="project-image">
+      <img src="/assets/images/hamina-3d.png" alt="Hamina 3D View screenshot" />
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-info">
       <h2 class="project-title">gitgo</h2>
       <p class="project-description">Static site generator for Git repositories. Creates a fast and beautiful web interface for browsing code, with no server-side processing or JavaScript required.</p>
       <div class="project-meta">
