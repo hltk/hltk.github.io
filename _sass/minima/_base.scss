@@ -69,7 +69,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: $font-size-sm;
+  font-size: var(--font-size-sm);
 }
 
 
@@ -105,12 +105,12 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $color-text-primary;
   text-decoration: underline;
-  text-decoration-color: $color-border-medium;
+  text-decoration-color: $color-text-primary;
   text-underline-offset: 2px;
-  transition: text-decoration-color 0.3s ease;
 
   &:visited {
     color: $color-text-secondary;
+    text-decoration-color: $color-text-secondary;
   }
 
   &:hover {
@@ -135,7 +135,7 @@ blockquote {
   color: $color-text-muted;
   border-left: 4px solid $color-border-light;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
+  font-size: var(--font-size-base);
   letter-spacing: -1px;
   font-style: italic;
 
@@ -151,7 +151,7 @@ blockquote {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
+  font-size: var(--font-size-sm);
   border: 1px solid $color-border-light;
   background-color: $color-code-bg;
 }

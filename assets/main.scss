@@ -129,13 +129,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-meta {
-  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
   color: var(--color-text-muted);
 }
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  font-size: var(--font-size-lg-fluid);
   margin-bottom: 0.5rem;
 }
 
