@@ -54,7 +54,7 @@ hide_title: true
   <div class="project-item">
     <div class="project-info">
       <h2 class="project-title">contestlib</h2>
-      <p class="project-description">Data structures and algorithms for ICPC-style programming contests.</p>
+      <p class="project-description">Data structures and algorithms for ICPC-style programming contests, featuring extensive unit tests.</p>
       <div class="project-meta">
         <span class="project-language cpp">C++</span>
         <span class="project-year">2021</span>
