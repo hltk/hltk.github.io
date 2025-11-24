@@ -478,6 +478,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: visible;
 }
 
+/* Enhanced ground shadow with better blur and spread */
 .paper-stack::after {
   content: "";
   position: absolute;
@@ -487,12 +488,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 32px;
   background: radial-gradient(
     ellipse at center,
-    rgba(15, 23, 42, 0.25) 0%,
-    rgba(15, 23, 42, 0.15) 40%,
-    rgba(15, 23, 42, 0) 70%
+    rgba(15, 23, 42, 0.3) 0%,
+    rgba(15, 23, 42, 0.18) 35%,
+    rgba(15, 23, 42, 0.08) 60%,
+    rgba(15, 23, 42, 0) 75%
   );
-  filter: blur(12px);
-  opacity: 0.55;
+  filter: blur(14px);
+  opacity: 0.65;
   z-index: 0;
   pointer-events: none;
 }
@@ -521,29 +523,111 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 350ms cubic-bezier(0.21, 0.62, 0.35, 1);
 }
 
+/* Bottom layer: warm tint, more blur, grain texture */
 .paper-stack-layer.layer-bottom {
   transform: translate(5px, 8px) rotate(-1deg) scale(0.994);
-  filter: brightness(1.02) saturate(0.95) blur(0.25px);
+  filter: brightness(0.98) saturate(0.92) blur(0.3px) sepia(0.04) hue-rotate(5deg) contrast(1.01);
   z-index: 1;
+  box-shadow: 
+    0 0 0 1px rgba(0, 0, 0, 0.03) inset,
+    0 18px 32px rgba(15, 23, 42, 0.18),
+    0 6px 12px rgba(15, 23, 42, 0.12);
 }
 
+/* Add aging spots to bottom layer */
+.paper-stack-layer.layer-bottom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: 
+    radial-gradient(ellipse at 82% 15%, rgba(139, 115, 85, 0.08) 0%, transparent 25%),
+    radial-gradient(ellipse at 15% 72%, rgba(120, 100, 80, 0.06) 0%, transparent 30%),
+    radial-gradient(ellipse at 92% 85%, rgba(100, 85, 70, 0.05) 0%, transparent 20%);
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Middle layer: neutral tint, medium blur, subtle grain */
 .paper-stack-layer.layer-middle {
   transform: translate(-3px, 4px) rotate(0.65deg) scale(0.997);
-  filter: brightness(1.03) saturate(0.97) blur(0.15px);
+  filter: brightness(1.01) saturate(0.95) blur(0.18px) sepia(0.02) contrast(1.008);
   z-index: 2;
+  box-shadow: 
+    0 0 0 1px rgba(0, 0, 0, 0.025) inset,
+    0 12px 22px rgba(15, 23, 42, 0.15),
+    0 4px 8px rgba(15, 23, 42, 0.1);
 }
 
+/* Add subtle aging to middle layer */
+.paper-stack-layer.layer-middle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: 
+    radial-gradient(ellipse at 25% 20%, rgba(130, 110, 90, 0.05) 0%, transparent 28%),
+    radial-gradient(ellipse at 75% 65%, rgba(110, 95, 80, 0.04) 0%, transparent 22%);
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Upper layer: cool tint, minimal blur, fine grain */
 .paper-stack-layer.layer-upper {
   transform: translate(-1px, 2px) rotate(0.3deg) scale(0.999);
-  filter: brightness(1.05) saturate(1);
+  filter: brightness(1.04) saturate(0.98) hue-rotate(-2deg) contrast(1.012);
   z-index: 3;
-  box-shadow: 0 8px 12px rgba(15, 23, 42, 0.12);
+  box-shadow: 
+    0 0 0 1px rgba(0, 0, 0, 0.02) inset,
+    0 8px 16px rgba(15, 23, 42, 0.12),
+    0 2px 6px rgba(15, 23, 42, 0.08);
 }
 
+/* Add very subtle marks to upper layer */
+.paper-stack-layer.layer-upper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: 
+    radial-gradient(ellipse at 60% 35%, rgba(120, 105, 90, 0.03) 0%, transparent 25%);
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Enhanced multi-directional glare layer */
 .paper-stack-layer.layer-glare {
-  background-image: linear-gradient(115deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 65%);
+  background-image: 
+    /* Main glare from top-left */
+    linear-gradient(125deg, 
+      rgba(255, 255, 255, 0.75) 0%, 
+      rgba(255, 255, 255, 0.35) 25%,
+      rgba(255, 255, 255, 0.12) 45%, 
+      rgba(255, 255, 255, 0) 70%
+    ),
+    /* Edge highlight - top */
+    linear-gradient(180deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.15) 8%,
+      rgba(255, 255, 255, 0) 15%
+    ),
+    /* Edge highlight - left */
+    linear-gradient(90deg,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(255, 255, 255, 0.12) 6%,
+      rgba(255, 255, 255, 0) 12%
+    ),
+    /* Soft ambient glow */
+    radial-gradient(ellipse at 20% 20%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.08) 40%,
+      rgba(255, 255, 255, 0) 70%
+    );
   mix-blend-mode: screen;
-  opacity: 0.35;
+  opacity: 0.42;
   transform: rotate(0.18deg) translate(-1px, -3px);
   z-index: 4;
   box-shadow: none;
@@ -552,24 +636,28 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 640px) {
   .paper-stack-layer.layer-bottom {
     transform: translate(4px, 6px) rotate(-1.2deg) scale(0.995);
+    filter: brightness(0.98) saturate(0.92) blur(0.25px) sepia(0.04) hue-rotate(5deg) contrast(1.01);
   }
 
   .paper-stack-layer.layer-middle {
     transform: translate(-3px, 3px) rotate(0.7deg) scale(0.997);
+    filter: brightness(1.01) saturate(0.95) blur(0.15px) sepia(0.02) contrast(1.008);
   }
 
   .paper-stack-layer.layer-upper {
     transform: translate(-1px, 1.5px) rotate(0.2deg) scale(0.999);
+    filter: brightness(1.04) saturate(0.98) hue-rotate(-2deg) contrast(1.012);
   }
 
   .paper-stack-layer.layer-glare {
-    opacity: 0.32;
+    opacity: 0.38;
   }
 
   .paper-stack::after {
     bottom: -12px;
     left: 10px;
     right: 10px;
+    filter: blur(12px);
   }
 }
 
