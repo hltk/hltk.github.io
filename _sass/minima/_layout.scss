@@ -8,7 +8,7 @@
   align-items: center;
 
   @include media-query($on-palm) {
-    padding-top: 60px;
+    padding-top: 64px;
   }
 }
 
@@ -90,7 +90,7 @@
   a {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: $spacing-xs;
     text-decoration: none;
     color: var(--color-text-muted);
     transition: color 0.25s ease;

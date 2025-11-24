@@ -157,11 +157,11 @@ code {
 }
 
 code {
-  padding: 1px 5px;
+  padding: 4px 8px;
 }
 
 pre {
-  padding: $spacing-sm $spacing-md / 2;
+  padding: $spacing-sm $spacing-md;
   overflow-x: auto;
 
   > code {
@@ -206,13 +206,13 @@ pre {
     height: 16px;
     display: inline-block;
     fill: var(--color-text-muted);
-    padding-right: 5px;
+    padding-right: 8px;
     vertical-align: text-top;
 }
 
 .social-media-list {
   li + li {
-    padding-top: 5px;
+    padding-top: 8px;
   }
 }
 
@@ -236,7 +236,7 @@ table {
   }
   
   th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: 8px 16px;
   }
   
   th {

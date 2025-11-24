@@ -26,13 +26,13 @@
   --font-size-xl-fluid: clamp(1.5rem, 1.2rem + 1.5vw, 2rem);
   --font-size-2xl-fluid: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
   
-  // Spacing scale (based on 30px unit)
-  --spacing-unit: 30px;
+  // Spacing scale (based on 32px unit)
+  --spacing-unit: 32px;
   --spacing-xs: 4px;
   --spacing-sm: 8px;
-  --spacing-md: 20px;
-  --spacing-lg: 40px;
-  --spacing-xl: 90px;
+  --spacing-md: 24px;
+  --spacing-lg: 64px;
+  --spacing-xl: 96px;
   
   // Color system - minimalist greyscale (3-tier text hierarchy)
   --color-bg: #fdfdfd;
@@ -69,12 +69,12 @@ $font-size-sm:     0.875rem !default;
 $font-size-base:   1rem !default;
 
 // Spacing scale
-$spacing-unit:     30px !default;
+$spacing-unit:     32px !default;
 $spacing-xs:       4px !default;
 $spacing-sm:       8px !default;
-$spacing-md:       20px !default;
-$spacing-lg:       40px !default;
-$spacing-xl:       90px !default;
+$spacing-md:       24px !default;
+$spacing-lg:       64px !default;
+$spacing-xl:       96px !default;
 
 // Layout
 $content-width:    800px !default;
