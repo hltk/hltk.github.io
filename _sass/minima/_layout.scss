@@ -28,12 +28,12 @@
 
   &,
   &:visited {
-    color: $color-header-text;
+    color: $color-text-primary;
   }
 
   &:hover {
     opacity: 0.6;
-    text-decoration-color: $color-header-text;
+    text-decoration-color: $color-text-primary;
   }
 }
 
@@ -44,7 +44,7 @@
   flex-wrap: wrap;
 
   .page-link {
-    color: $color-header-text;
+    color: $color-text-primary;
     line-height: $base-line-height;
     text-decoration: underline;
     text-decoration-color: $color-border-medium;
@@ -52,12 +52,12 @@
     transition: text-decoration-color 0.3s ease, opacity 0.3s ease;
 
     &:visited {
-      color: $color-header-text;
+      color: $color-text-primary;
     }
 
     &:hover {
       opacity: 0.6;
-      text-decoration-color: $color-header-text;
+      text-decoration-color: $color-text-primary;
     }
   }
 }

@@ -30,23 +30,17 @@
   --spacing-lg: 40px;
   --spacing-xl: 80px;
   
-  // Color system - minimalist greyscale
+  // Color system - minimalist greyscale (3-tier text hierarchy)
   --color-bg: #fdfdfd;
   --color-surface: #ffffff;
   --color-text-primary: #111;
   --color-text-secondary: #555;
-  --color-text-tertiary: #666;
   --color-text-muted: #828282;
-  --color-text-light: #aaa;
   --color-border-light: #e8e8e8;
   --color-border-medium: #ddd;
   --color-border-dark: #999;
-  --color-accent: #111;
-  --color-accent-hover: #000;
-  --color-accent-dark: #333;
   
-  // Additional semantic colors for specific use cases
-  --color-header-text: #424242;
+  // Semantic colors for specific components
   --color-code-bg: #f5f5f5;
   --color-table-stripe: #f9f9f9;
   --color-table-header-bg: #f0f0f0;
@@ -82,23 +76,17 @@ $spacing-md:       20px !default;
 $spacing-lg:       40px !default;
 $spacing-xl:       80px !default;
 
-// Color system - minimalist greyscale
+// Color system - minimalist greyscale (3-tier text hierarchy)
 $color-bg:              #fdfdfd !default;
 $color-surface:         #ffffff !default;
 $color-text-primary:    #111 !default;
 $color-text-secondary:  #555 !default;
-$color-text-tertiary:   #666 !default;
 $color-text-muted:      #828282 !default;
-$color-text-light:      #aaa !default;
 $color-border-light:    #e8e8e8 !default;
 $color-border-medium:   #ddd !default;
 $color-border-dark:     #999 !default;
-$color-accent:          #111 !default;
-$color-accent-hover:    #000 !default;
-$color-accent-dark:     #333 !default;
 
 // Semantic colors for specific components
-$color-header-text:     #424242 !default;
 $color-code-bg:         #f5f5f5 !default;
 $color-table-stripe:    #f9f9f9 !default;
 $color-table-header-bg: #f0f0f0 !default;

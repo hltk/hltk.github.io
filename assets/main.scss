@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-normal);
   font-variant-numeric: tabular-nums;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-secondary);
   flex-shrink: 0;
   white-space: nowrap;
 }
@@ -358,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Location info
 .resume-location {
-  color: var(--color-text-tertiary);
+  color: var(--color-text-secondary);
   flex-shrink: 0;
   white-space: nowrap;
 }
