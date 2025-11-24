@@ -61,11 +61,7 @@ hide_title: true
         <a href="https://github.com/hltk/contestlib" target="_blank" class="project-link">GitHub</a>
       </div>
     </div>
-    <div class="project-image">
-      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="300" fill="#f0f0f0"/>
-        <text x="50%" y="50%" text-anchor="middle" fill="#999" font-size="24" font-family="sans-serif">contestlib</text>
-      </svg>
+    <div class="project-image project-image-placeholder">
     </div>
   </div>
 
@@ -79,11 +75,7 @@ hide_title: true
         <a href="https://github.com/hltk/adventofcode" target="_blank" class="project-link">GitHub</a>
       </div>
     </div>
-    <div class="project-image">
-      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="300" fill="#f0f0f0"/>
-        <text x="50%" y="50%" text-anchor="middle" fill="#999" font-size="24" font-family="sans-serif">adventofcode</text>
-      </svg>
+    <div class="project-image project-image-placeholder">
     </div>
   </div>
 </div>
