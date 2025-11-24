@@ -22,13 +22,13 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   text-decoration: underline;
-  text-decoration-color: $color-text-primary;
+  text-decoration-color: var(--color-text-secondary);
   text-underline-offset: 2px;
   transition: opacity 0.3s ease;
 
   &,
   &:visited {
-    color: $color-text-primary;
+    color: var(--color-text-primary);
   }
 
   &:hover {
@@ -43,15 +43,15 @@
   flex-wrap: wrap;
 
   .page-link {
-    color: $color-text-primary;
+    color: var(--color-text-primary);
     line-height: $base-line-height;
     text-decoration: underline;
-    text-decoration-color: $color-text-primary;
+    text-decoration-color: var(--color-text-secondary);
     text-underline-offset: 2px;
     transition: opacity 0.3s ease;
 
     &:visited {
-      color: $color-text-primary;
+      color: var(--color-text-primary);
     }
 
     &:hover {
@@ -125,7 +125,7 @@
 
 .post-meta {
   font-size: var(--font-size-sm);
-  color: $color-text-muted;
+  color: var(--color-text-muted);
 }
 
 .post-link {
@@ -202,7 +202,7 @@
 }
 
 .project-description {
-  color: $color-text-secondary;
+  color: var(--color-text-primary);
   margin-bottom: 0;
   line-height: 1.6;
 }
@@ -218,23 +218,23 @@
 .project-language {
   font-size: var(--font-size-sm);
   font-style: italic;
-  color: $color-text-muted;
+  color: var(--color-text-muted);
 }
 
 .project-link {
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
   text-decoration: underline;
-  text-decoration-color: $color-border-medium;
+  text-decoration-color: var(--color-border-medium);
   text-underline-offset: 2px;
   font-size: var(--font-size-sm);
   transition: text-decoration-color 0.3s ease;
   
   &:visited {
-    color: $color-text-secondary;
+    color: var(--color-text-secondary);
   }
   
   &:hover {
-    text-decoration-color: $color-text-primary;
+    text-decoration-color: var(--color-text-primary);
   }
 }
 
