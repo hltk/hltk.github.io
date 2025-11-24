@@ -72,7 +72,7 @@ hide_title: true
       </div>
       <ul class="resume-details">
         <li>Researched graph algorithms for simulating disease and information spread in social networks.</li>
-        <li>Developed C++ simulators.</li>
+        <li>Developed performance-critical distributed simulators using C++ MPI.</li>
       </ul>
     </div>
 
@@ -175,7 +175,7 @@ hide_title: true
   <section class="resume-section">
     <h2>Scholarships</h2>
     <ul class="resume-awards">
-      <li>Aalto University, School of Science — Dean's Incentive Scholarship (2023, 2024)</li>
+      <li>Aalto University, School of Science — Dean's Incentive Scholarship (2023, 2024, 2025)</li>
       <li>Aalto University — Scholarship from the Professor E. J. Nyström Fund, December 2024</li>
       <li>Technology Industries of Finland — Scholarship for Outstanding Performance in Advanced Mathematics, June 2021</li>
     </ul>
