@@ -181,18 +181,17 @@
 }
 
 .project-item {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
   gap: $spacing-lg;
   align-items: center;
 
   @include media-query($on-palm) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
 .project-info {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: $spacing-sm;
@@ -250,14 +249,9 @@
 }
 
 .project-image {
-  flex-shrink: 0;
-  width: 280px;
-  height: 180px;
-  
-  @include media-query($on-palm) {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+  justify-self: end;
   
   svg, img {
     width: 100%;
