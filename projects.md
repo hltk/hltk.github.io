@@ -28,7 +28,6 @@ hide_title: true
       <div class="project-meta">
         <span class="project-language mathematics">Mathematics</span>
         <span class="project-year">2025</span>
-        <a href="/thesis/" class="project-link">Thesis Page</a>
         <a href="https://aaltodoc.aalto.fi/items/0b03ed44-8d34-4d2b-8265-90494e87ba5b" target="_blank" class="project-link">Aaltodoc</a>
       </div>
     </div>
