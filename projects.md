@@ -21,7 +21,7 @@ hide_title: true
     </div>
   </div>
 
-  <div class="project-item">
+  <div class="project-item project-item--thesis">
     <div class="project-info">
       <h2 class="project-title">The Sylow Theorems and Classification of Finite Groups</h2>
       <p class="project-description">69-page bachelor's thesis presenting a comprehensive classification of finite groups of orders 1-20, examining their structure through the Sylow theorems and fundamental group-theoretic results.</p>
@@ -31,7 +31,11 @@ hide_title: true
         <a href="https://aaltodoc.aalto.fi/items/0b03ed44-8d34-4d2b-8265-90494e87ba5b" target="_blank" class="project-link">Aaltodoc</a>
       </div>
     </div>
-    <div class="project-image">
+    <div class="project-image paper-stack" style="--paper-stack-image: url('/assets/images/thesis.png');">
+      <span class="paper-stack-layer layer-bottom" aria-hidden="true"></span>
+      <span class="paper-stack-layer layer-middle" aria-hidden="true"></span>
+      <span class="paper-stack-layer layer-upper" aria-hidden="true"></span>
+      <span class="paper-stack-layer layer-glare" aria-hidden="true"></span>
       <img src="/assets/images/thesis.png" alt="Bachelor's thesis cover" />
     </div>
   </div>

@@ -463,3 +463,136 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+
+/**
+ * Thesis paper stack effect
+ * Creates layered pseudo-sheets with subtle transforms for depth.
+ */
+.paper-stack {
+  position: relative;
+  isolation: isolate;
+  --paper-stack-radius: 12px;
+  --paper-stack-image: none;
+  --paper-stack-shadow: 0 16px 28px rgba(15, 23, 42, 0.16);
+  --paper-stack-accent-shadow: 0 10px 16px rgba(15, 23, 42, 0.14);
+  overflow: visible;
+}
+
+.paper-stack::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 14px;
+  right: 14px;
+  height: 32px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(15, 23, 42, 0.25) 0%,
+    rgba(15, 23, 42, 0.15) 40%,
+    rgba(15, 23, 42, 0) 70%
+  );
+  filter: blur(12px);
+  opacity: 0.55;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.paper-stack img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--paper-stack-radius);
+  box-shadow: var(--paper-stack-accent-shadow);
+  position: relative;
+  z-index: 5;
+}
+
+.paper-stack-layer {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--paper-stack-radius);
+  pointer-events: none;
+  background-image: var(--paper-stack-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: var(--paper-stack-shadow);
+  opacity: 0.96;
+  transition: transform 350ms cubic-bezier(0.21, 0.62, 0.35, 1);
+}
+
+.paper-stack-layer.layer-bottom {
+  transform: translate(5px, 8px) rotate(-1deg) scale(0.994);
+  filter: brightness(1.02) saturate(0.95) blur(0.25px);
+  z-index: 1;
+}
+
+.paper-stack-layer.layer-middle {
+  transform: translate(-3px, 4px) rotate(0.65deg) scale(0.997);
+  filter: brightness(1.03) saturate(0.97) blur(0.15px);
+  z-index: 2;
+}
+
+.paper-stack-layer.layer-upper {
+  transform: translate(-1px, 2px) rotate(0.3deg) scale(0.999);
+  filter: brightness(1.05) saturate(1);
+  z-index: 3;
+  box-shadow: 0 8px 12px rgba(15, 23, 42, 0.12);
+}
+
+.paper-stack-layer.layer-glare {
+  background-image: linear-gradient(115deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 65%);
+  mix-blend-mode: screen;
+  opacity: 0.35;
+  transform: rotate(0.18deg) translate(-1px, -3px);
+  z-index: 4;
+  box-shadow: none;
+}
+
+@media (max-width: 640px) {
+  .paper-stack-layer.layer-bottom {
+    transform: translate(4px, 6px) rotate(-1.2deg) scale(0.995);
+  }
+
+  .paper-stack-layer.layer-middle {
+    transform: translate(-3px, 3px) rotate(0.7deg) scale(0.997);
+  }
+
+  .paper-stack-layer.layer-upper {
+    transform: translate(-1px, 1.5px) rotate(0.2deg) scale(0.999);
+  }
+
+  .paper-stack-layer.layer-glare {
+    opacity: 0.32;
+  }
+
+  .paper-stack::after {
+    bottom: -12px;
+    left: 10px;
+    right: 10px;
+  }
+}
+
+.project-item--thesis .project-image {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 210 / 297;
+}
+
+.project-item--thesis .paper-stack {
+  --paper-stack-radius: 0px;
+  transform: perspective(1600px) rotateX(2.2deg) rotateZ(-0.35deg);
+  transform-origin: center center;
+}
+
+@media screen and (max-width: 768px) {
+  .project-item--thesis .project-image {
+    width: min(240px, 75vw);
+    margin-left: 0;
+  }
+
+  .project-item--thesis .paper-stack {
+    transform: perspective(1200px) rotateX(1.4deg) rotateZ(-0.25deg);
+  }
+}
