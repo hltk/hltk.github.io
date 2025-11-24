@@ -9,7 +9,7 @@ hide_title: true
     <div class="intro-text">
       <p>Passionate product builder. <strong>IOI</strong> Silver Medalist, <strong>NCPC</strong> Champion, BSc in Mathematics from Aalto University.</p>
       
-      <p>I lead the machine learning team at Hamina Wireless, a top Finnish startup. We're building an exceptional product for wireless network design, validation, and troubleshooting. I've built and scaled machine learning pipelines to production.</p>
+      <p>I lead the machine learning team at <a href="https://hamina.com/">Hamina Wireless</a>, a top Finnish startup. We're building an exceptional product for wireless network design, validation, and troubleshooting. I've built and scaled machine learning pipelines to production.</p>
       
       <p>I have published research on algorithmic efficiency in social networks, and I wrote my thesis on classifying finite groups.</p>
       
