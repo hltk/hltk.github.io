@@ -16,8 +16,10 @@ hide_title: true
         <a href="https://www.linkedin.com/posts/henrik-aalto_five-features-five-days-last-week-we-announced-activity-7350464157084725250-NQlC" target="_blank" class="project-link">Post</a>
       </div>
     </div>
-    <div class="project-image">
-      <img src="/assets/images/hamina-3d.png" alt="Hamina 3D View screenshot" />
+    <div class="project-image project-image--polaroid">
+      <figure class="project-polaroid" role="presentation">
+        <img src="/assets/images/hamina-3d.png" alt="Hamina 3D View screenshot" />
+      </figure>
     </div>
   </div>
 
