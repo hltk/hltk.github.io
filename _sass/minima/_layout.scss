@@ -265,3 +265,11 @@
     object-fit: cover;
   }
 }
+
+.project-image-placeholder {
+  visibility: hidden;
+  
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
