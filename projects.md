@@ -9,7 +9,7 @@ hide_title: true
   <div class="project-item">
     <div class="project-info">
       <h2 class="project-title">gitgo</h2>
-      <p class="project-description">Static site generator for Git repositories. Creates a fast and beautiful web interface for browsing code, with no server-side processing or JavaScript required 🐳</p>
+      <p class="project-description">Static site generator for Git repositories. Creates a fast and beautiful web interface for browsing code, with no server-side processing or JavaScript required.</p>
       <div class="project-meta">
         <span class="project-language go">Go</span>
         <a href="https://github.com/hltk/gitgo" target="_blank" class="project-link">GitHub</a>
@@ -23,7 +23,7 @@ hide_title: true
   <div class="project-item">
     <div class="project-info">
       <h2 class="project-title">rustgrad</h2>
-      <p class="project-description">Micrograd-inspired, tiny autograd engine and neural network library with PyTorch-like API, written in Rust 🦀</p>
+      <p class="project-description">Micrograd-inspired, tiny autograd engine and neural network library with PyTorch-like API, written in Rust.</p>
       <div class="project-meta">
         <span class="project-language rust">Rust</span>
         <a href="https://github.com/hltk/rustgrad" target="_blank" class="project-link">GitHub</a>
@@ -37,7 +37,7 @@ hide_title: true
   <div class="project-item">
     <div class="project-info">
       <h2 class="project-title">contestlib</h2>
-      <p class="project-description">Data structures and algorithms for ICPC-style programming contests 🤖</p>
+      <p class="project-description">Data structures and algorithms for ICPC-style programming contests.</p>
       <div class="project-meta">
         <span class="project-language cpp">C++</span>
         <a href="https://github.com/hltk/contestlib" target="_blank" class="project-link">GitHub</a>
@@ -54,7 +54,7 @@ hide_title: true
   <div class="project-item">
     <div class="project-info">
       <h2 class="project-title">adventofcode</h2>
-      <p class="project-description">Advent of Code problems solved in various languages 🎄</p>
+      <p class="project-description">Advent of Code problems solved in various languages.</p>
       <div class="project-meta">
         <span class="project-language python">Python</span>
         <a href="https://github.com/hltk/adventofcode" target="_blank" class="project-link">GitHub</a>
