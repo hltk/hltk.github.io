@@ -189,6 +189,14 @@
 
   @include media-query($on-palm) {
     grid-template-columns: 1fr;
+
+    .project-info {
+      order: 2;
+    }
+
+    .project-image {
+      order: 1;
+    }
   }
 }
 
