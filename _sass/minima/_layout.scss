@@ -300,8 +300,8 @@
     /* Tight drop shadow */
     0 4px 12px rgba(15, 23, 42, 0.12),
     0 8px 24px rgba(15, 23, 42, 0.08),
-    /* Subtle glossy edge highlight */
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    /* Subtle glossy edge highlight - softened */
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
   transform-origin: 55% 80%;
   transform: rotate(-2deg) perspective(600px) rotateX(3deg) rotateY(-1deg);
   isolation: isolate;
@@ -311,7 +311,7 @@
     box-shadow:
       0 3px 10px rgba(15, 23, 42, 0.12),
       0 6px 18px rgba(15, 23, 42, 0.08),
-      inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      inset 0 1px 0 rgba(255, 255, 255, 0.25);
 
     &:after {
       inset: -6% -8% 10%;
@@ -326,32 +326,32 @@
     inset: clamp(0.25rem, 0.5vw, 0.4rem);
     border-radius: inherit;
     background:
-      /* Subtle specular highlight - glossy paper reflection */
-      radial-gradient(ellipse 30% 20% at 10% 12%,
-        rgba(255, 255, 255, 0.7) 0%,
-        rgba(255, 255, 255, 0.4) 30%,
-        rgba(255, 255, 255, 0.1) 60%,
-        transparent 85%
-      ),
-      /* Soft glare streak */
-      linear-gradient(130deg,
+      /* Subtle specular highlight - softened for glossy print look */
+      radial-gradient(ellipse 35% 25% at 10% 12%,
         rgba(255, 255, 255, 0.35) 0%,
-        rgba(255, 255, 255, 0.12) 15%,
-        transparent 35%
+        rgba(255, 255, 255, 0.18) 35%,
+        rgba(255, 255, 255, 0.05) 65%,
+        transparent 90%
       ),
-      /* Top edge catch light */
-      linear-gradient(180deg,
+      /* Soft diffuse glare streak */
+      linear-gradient(130deg,
         rgba(255, 255, 255, 0.2) 0%,
-        rgba(255, 255, 255, 0.06) 2%,
+        rgba(255, 255, 255, 0.08) 18%,
+        transparent 40%
+      ),
+      /* Top edge catch light - subtle */
+      linear-gradient(180deg,
+        rgba(255, 255, 255, 0.12) 0%,
+        rgba(255, 255, 255, 0.04) 2%,
         transparent 5%
       ),
-      /* Left edge catch light */
+      /* Left edge catch light - subtle */
       linear-gradient(90deg,
-        rgba(255, 255, 255, 0.15) 0%,
-        rgba(255, 255, 255, 0.04) 2%,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.03) 2%,
         transparent 4%
       );
-    opacity: 0.85;
+    opacity: 0.75;
     pointer-events: none;
     mix-blend-mode: overlay;
     z-index: 10;
@@ -376,9 +376,12 @@
     width: 100%;
     height: auto;
     border-radius: 0;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Rich glossy print look - deep blacks and punchy contrast */
-    filter: contrast(1.05) brightness(1.02) saturate(1.08);
+    /* Subtle inner shadow for natural edge blending - mimics ink bleed on glossy prints */
+    box-shadow: 
+      inset 0 0 3px rgba(0, 0, 0, 0.06),
+      inset 0 0 8px rgba(0, 0, 0, 0.03);
+    /* Rich glossy print look - keep whites at or below border brightness */
+    filter: contrast(1.04) brightness(0.98) saturate(1.06);
   }
 }
 
