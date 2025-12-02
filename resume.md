@@ -21,8 +21,8 @@ hide_title: true
         </div>
       </div>
       <ul class="resume-details">
-        <li>Leading a 9-person machine learning team to deliver computer vision solutions to production.</li>
-        <li>Architected and integrated computer vision algorithms from proof of concept to the core product, enabling automated network planning and processing 10,000+ floor plans per month.</li>
+        <li>Leading a 9-person team. Joined as the 12th employee, now over 40.</li>
+        <li>Built a deep learning pipeline that converts floor plans to 3D RF models.</li>
         <li>Technologies: React, Node.js, WebGL, Python, PyTorch, C++, Rust.</li>
       </ul>
     </div>
@@ -39,8 +39,9 @@ hide_title: true
         </div>
       </div>
       <ul class="resume-details">
-        <li>Joined as the 12th employee.</li>
-        <li>Developed an RF physics simulation library, a 3D graphics engine, ray-tracing simulation modules, and full-stack web and iOS applications.</li>
+        <li>Implemented a 3D fast-ray-tracing system in C++ WebAssembly.</li>
+        <li>Built a 3D engine with WBOIT transparency and SSAO based on NVIDIA's papers.</li>
+        <li>Invented an antenna pattern interpolation algorithm.</li>
       </ul>
     </div>
 
@@ -71,8 +72,8 @@ hide_title: true
         </div>
       </div>
       <ul class="resume-details">
-        <li>Researched graph algorithms for simulating disease and information spread in social networks.</li>
-        <li>Developed performance-critical distributed simulators using C++ MPI.</li>
+        <li>During conscription, co-authored two peer-reviewed papers on disease and influence diffusion in social networks.</li>
+        <li>Engineered distributed simulators using C++ MPI and wrote significant parts of the manuscripts.</li>
       </ul>
     </div>
 
@@ -93,7 +94,7 @@ hide_title: true
       </div>
       <ul class="resume-details">
         <li>Graduated with a 5.0/5.0 GPA.</li>
-        <li>Authored a 69-page bachelor's thesis on the classification of finite groups.</li>
+        <li>Authored a 69-page bachelor's thesis on the Sylow theorems and classification of finite groups, supervised by Prof. Kaie Kubjas.</li>
       </ul>
       <div class="coursework-section">
         <p class="coursework-title"><strong>Computer Science Coursework</strong></p>
@@ -164,6 +165,7 @@ hide_title: true
     <h2>Competitions</h2>
     <ul class="resume-awards">
       <li><strong>International Olympiad in Informatics (IOI)</strong> — Silver Medal, June 2021</li>
+      <li><strong>Mashup AI Hackathon 2025</strong> — Winner in the UI/UX category, May 2025</li>
       <li><strong>Nordic Collegiate Programming Contest 2024 (NCPC, ICPC Regional)</strong> — 1st Place, October 2024</li>
       <li><strong>Junction 2023 Hackathon</strong> — "Energy Revolution, now" Challenge Winner, November 2023</li>
       <li><strong>Baltic Olympiad in Informatics (BOI)</strong> — Gold Medal, Overall 5th Place, May 2022</li>
