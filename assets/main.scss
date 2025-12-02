@@ -64,6 +64,35 @@ h1, h2, h3, h4, h5, h6 {
   align-self: start;
 }
 
+.featured-image--polaroid {
+  display: flex;
+  justify-content: flex-end;
+  
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+  
+  .project-polaroid {
+    transform-origin: 45% 80%;
+    transform: rotate(1.2deg) perspective(600px) rotateX(2deg) rotateY(0.6deg);
+    box-shadow:
+      0 10px 24px rgba(15, 23, 42, 0.18),
+      0 24px 48px rgba(15, 23, 42, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    
+    &:before {
+      opacity: 0.45;
+    }
+    
+    &:after {
+      opacity: 0.8;
+    }
+    
+    @media screen and (max-width: 768px) {
+      transform: rotate(0.5deg) perspective(800px) rotateX(1.5deg) rotateY(0.3deg);
+    }
+  }
+}
 
 .img-responsive {
   max-width: 100%;

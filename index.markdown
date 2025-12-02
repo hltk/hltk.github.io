@@ -16,8 +16,10 @@ hide_title: true
       <p>I coach Finland's IOI team, developing problem sets, organizing training camps, and have co-led Team Finland at BOI 2023 and IOI 2025.</p>
     </div>
     
-    <div class="featured-image">
-      <img src="/assets/images/pmv.jpeg" alt="Henrik Aalto" class="img-responsive">
+    <div class="featured-image featured-image--polaroid">
+      <figure class="project-polaroid" role="presentation">
+        <img src="/assets/images/pmv.jpeg" alt="Henrik Aalto" />
+      </figure>
     </div>
   </section>
 
