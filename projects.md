@@ -18,7 +18,7 @@ hide_title: true
     </div>
     <div class="project-image project-image--polaroid">
       <figure class="project-polaroid" role="presentation">
-        <img src="/assets/images/hamina-3d.png" alt="Hamina 3D View screenshot" />
+        <img src="/assets/images/hamina-3d.png" alt="Hamina 3D View screenshot" style="aspect-ratio: 648/370;" />
       </figure>
     </div>
   </div>
@@ -39,7 +39,7 @@ hide_title: true
         <span class="quicktime-btn quicktime-btn--minimize"></span>
         <span class="quicktime-btn quicktime-btn--maximize"></span>
       </div>
-      <img src="/assets/images/planning-assistant.gif" alt="Hamina Planning Assistant demo" />
+      <img src="/assets/images/planning-assistant.gif" alt="Hamina Planning Assistant demo" style="aspect-ratio: 400/322;" />
     </div>
   </div>
   
@@ -59,7 +59,7 @@ hide_title: true
         <span class="quicktime-btn quicktime-btn--minimize"></span>
         <span class="quicktime-btn quicktime-btn--maximize"></span>
       </div>
-      <img src="/assets/images/auto-3d-modeling.jpg" alt="Automatic Building 3D Modeling screenshot" />
+      <img src="/assets/images/auto-3d-modeling.jpg" alt="Automatic Building 3D Modeling screenshot" style="aspect-ratio: 2862/2182;" />
     </div>
   </div>
 
@@ -79,7 +79,7 @@ hide_title: true
         <span class="quicktime-btn quicktime-btn--minimize"></span>
         <span class="quicktime-btn quicktime-btn--maximize"></span>
       </div>
-      <img src="/assets/images/fast-ray-tracing.gif" alt="Fast Ray Tracing demo" />
+      <img src="/assets/images/fast-ray-tracing.gif" alt="Fast Ray Tracing demo" style="aspect-ratio: 480/231;" />
     </div>
   </div>
 
@@ -94,7 +94,7 @@ hide_title: true
       </div>
     </div>
     <div class="project-image project-image--shadow">
-      <img src="/assets/images/antenna-viewer.jpg" alt="Hamina Antenna Viewer screenshot" />
+      <img src="/assets/images/antenna-viewer.jpg" alt="Hamina Antenna Viewer screenshot" style="aspect-ratio: 744/600;" />
     </div>
   </div>
   
@@ -113,7 +113,7 @@ hide_title: true
       <span class="paper-stack-layer layer-middle" aria-hidden="true"></span>
       <span class="paper-stack-layer layer-upper" aria-hidden="true"></span>
       <span class="paper-stack-layer layer-glare" aria-hidden="true"></span>
-      <img src="/assets/images/thesis.png" alt="Bachelor's thesis cover" />
+      <img src="/assets/images/thesis.png" alt="Bachelor's thesis cover" style="aspect-ratio: 2480/3507;" />
     </div>
   </div>
 
@@ -128,7 +128,7 @@ hide_title: true
       </div>
     </div>
     <div class="project-image">
-      <img src="/assets/images/gitgo.png" alt="gitgo screenshot" />
+      <img src="/assets/images/gitgo.png" alt="gitgo screenshot" style="aspect-ratio: 900/642;" />
     </div>
   </div>
 
@@ -143,7 +143,7 @@ hide_title: true
       </div>
     </div>
     <div class="project-image">
-      <img src="/assets/images/rustgrad.png" alt="rustgrad plot" />
+      <img src="/assets/images/rustgrad.png" alt="rustgrad plot" style="aspect-ratio: 900/630;" />
     </div>
   </div>
 
