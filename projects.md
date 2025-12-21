@@ -18,7 +18,7 @@ hide_title: true
     </div>
     <div class="project-image project-image--polaroid">
       <figure class="project-polaroid" role="presentation">
-        <img src="/assets/images/hamina-3d.png" alt="Hamina 3D View screenshot" style="aspect-ratio: 648/370;" />
+        <img src="/assets/images/hamina-3d.webp" alt="Hamina 3D View screenshot" style="aspect-ratio: 648/370;" />
       </figure>
     </div>
   </div>
@@ -59,7 +59,7 @@ hide_title: true
         <span class="quicktime-btn quicktime-btn--minimize"></span>
         <span class="quicktime-btn quicktime-btn--maximize"></span>
       </div>
-      <img src="/assets/images/auto-3d-modeling.jpg" alt="Automatic Building 3D Modeling screenshot" style="aspect-ratio: 2862/2182;" />
+      <img src="/assets/images/auto-3d-modeling.webp" alt="Automatic Building 3D Modeling screenshot" style="aspect-ratio: 800/610;" />
     </div>
   </div>
 
@@ -108,12 +108,12 @@ hide_title: true
         <a href="https://aaltodoc.aalto.fi/items/0b03ed44-8d34-4d2b-8265-90494e87ba5b" target="_blank" class="project-link">Aaltodoc</a>
       </div>
     </div>
-    <div class="project-image paper-stack" style="--paper-stack-image: url('/assets/images/thesis.png');">
+    <div class="project-image paper-stack" style="--paper-stack-image: url('/assets/images/thesis.webp');">
       <span class="paper-stack-layer layer-bottom" aria-hidden="true"></span>
       <span class="paper-stack-layer layer-middle" aria-hidden="true"></span>
       <span class="paper-stack-layer layer-upper" aria-hidden="true"></span>
       <span class="paper-stack-layer layer-glare" aria-hidden="true"></span>
-      <img src="/assets/images/thesis.png" alt="Bachelor's thesis cover" style="aspect-ratio: 2480/3507;" />
+      <img src="/assets/images/thesis.webp" alt="Bachelor's thesis cover" style="aspect-ratio: 565/800;" />
     </div>
   </div>
 
@@ -128,7 +128,7 @@ hide_title: true
       </div>
     </div>
     <div class="project-image">
-      <img src="/assets/images/gitgo.png" alt="gitgo screenshot" style="aspect-ratio: 900/642;" />
+      <img src="/assets/images/gitgo.webp" alt="gitgo screenshot" style="aspect-ratio: 900/642;" />
     </div>
   </div>
 
@@ -143,7 +143,7 @@ hide_title: true
       </div>
     </div>
     <div class="project-image">
-      <img src="/assets/images/rustgrad.png" alt="rustgrad plot" style="aspect-ratio: 900/630;" />
+      <img src="/assets/images/rustgrad.webp" alt="rustgrad plot" style="aspect-ratio: 900/630;" />
     </div>
   </div>
 
