@@ -23,6 +23,81 @@ hide_title: true
     </div>
   </div>
 
+  <div class="project-item">
+    <div class="project-info">
+      <h2 class="project-title">Planning Assistant</h2>
+      <p class="project-description">Automatic access point placement tool that optimizes locations based on coverage, interferences, room type, and Wi-Fi best practices. Includes a custom heatmap animation engine.</p>
+      <div class="project-meta">
+        <span class="project-language cpp">C++, WebAssembly, TypeScript</span>
+        <span class="project-year">2024</span>
+        <a href="https://docs.hamina.com/planner/simulation/auto-plan-aps" target="_blank" class="project-link">Docs</a>
+      </div>
+    </div>
+    <div class="project-image quicktime-window">
+      <div class="quicktime-titlebar">
+        <span class="quicktime-btn quicktime-btn--close"></span>
+        <span class="quicktime-btn quicktime-btn--minimize"></span>
+        <span class="quicktime-btn quicktime-btn--maximize"></span>
+      </div>
+      <img src="/assets/images/planning-assistant.gif" alt="Hamina Planning Assistant demo" />
+    </div>
+  </div>
+  
+  <div class="project-item">
+    <div class="project-info">
+      <h2 class="project-title">Automatic Building 3D Modeling</h2>
+      <p class="project-description">Deep learning pipeline that converts floor plan images into full 3D building models for RF simulation. Processes thousands of floor plans monthly.</p>
+      <div class="project-meta">
+        <span class="project-language python">TypeScript, PyTorch</span>
+        <span class="project-year">2025</span>
+        <a href="https://www.linkedin.com/posts/hamina-wireless_our-ai-jefes-henrik-aalto-and-valtteri-ugcPost-7404816154306981888-M-Zp" target="_blank" class="project-link">Post</a>
+      </div>
+    </div>
+    <div class="project-image quicktime-window">
+      <div class="quicktime-titlebar">
+        <span class="quicktime-btn quicktime-btn--close"></span>
+        <span class="quicktime-btn quicktime-btn--minimize"></span>
+        <span class="quicktime-btn quicktime-btn--maximize"></span>
+      </div>
+      <img src="/assets/images/auto-3d-modeling.jpg" alt="Automatic Building 3D Modeling screenshot" />
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-info">
+      <h2 class="project-title">Fast Ray Tracing</h2>
+      <p class="project-description">Real-time RF ray tracing module implemented in multithreaded C++ WebAssembly. Simulates refractions and diffractions for more accurate RF modeling.</p>
+      <div class="project-meta">
+        <span class="project-language cpp">C++, WebAssembly</span>
+        <span class="project-year">2024</span>
+        <a href="https://docs.hamina.com/planner/basics/heatmaps#fast-ray-tracing" target="_blank" class="project-link">Docs</a>
+      </div>
+    </div>
+    <div class="project-image quicktime-window">
+      <div class="quicktime-titlebar">
+        <span class="quicktime-btn quicktime-btn--close"></span>
+        <span class="quicktime-btn quicktime-btn--minimize"></span>
+        <span class="quicktime-btn quicktime-btn--maximize"></span>
+      </div>
+      <img src="/assets/images/fast-ray-tracing.gif" alt="Fast Ray Tracing demo" />
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-info">
+      <h2 class="project-title">Hamina Antenna Viewer</h2>
+      <p class="project-description">Interactive 3D antenna radiation pattern viewer. Interpolates 3D antenna mesh from 2D azimuth and elevation planes. Allows for downloading .OBJ files for 3D printing.</p>
+      <div class="project-meta">
+        <span class="project-language webgl">TypeScript, WebGL</span>
+        <span class="project-year">2023</span>
+        <a href="https://blog.hamina.com/printing-wi-fi-antenna-patterns" target="_blank" class="project-link">Blog</a>
+      </div>
+    </div>
+    <div class="project-image project-image--shadow">
+      <img src="/assets/images/antenna-viewer.jpg" alt="Hamina Antenna Viewer screenshot" />
+    </div>
+  </div>
+  
   <div class="project-item project-item--thesis">
     <div class="project-info">
       <h2 class="project-title">The Sylow Theorems and Classification of Finite Groups</h2>
