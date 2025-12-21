@@ -22,7 +22,7 @@ hide_title: true
       </div>
       <ul class="resume-details">
         <li>Leading a 9-person team. Joined as the 12th employee, now over 40.</li>
-        <li>Built a deep learning pipeline that converts floor plans to 3D RF models.</li>
+        <li>Architected a deep learning pipeline that converts floor plans to 3D RF models.</li>
         <li>Technologies: React, Node.js, WebGL, Python, PyTorch, C++, Rust.</li>
       </ul>
     </div>
