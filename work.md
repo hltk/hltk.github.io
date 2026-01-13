@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Work
+permalink: /work/
 hide_title: true
 ---
 
