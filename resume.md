@@ -12,16 +12,28 @@ hide_title: true
     <div class="resume-item">
       <div class="resume-header">
         <div class="resume-left-col">
+          <div class="resume-org">Parahelp</div>
+          <p class="resume-position">Founding Engineer</p>
+        </div>
+        <div class="resume-right-col">
+          <span class="resume-date">Feb 2026 – Present</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-item">
+      <div class="resume-header">
+        <div class="resume-left-col">
           <div class="resume-org">Hamina Wireless</div>
           <p class="resume-position">Machine Learning Team Lead</p>
         </div>
         <div class="resume-right-col">
-          <span class="resume-date">Jan 2025 – Present</span>
+          <span class="resume-date">Jan 2025 – Mar 2026</span>
           <span class="resume-location">Helsinki, Finland</span>
         </div>
       </div>
       <ul class="resume-details">
-        <li>Leading a 9-person team. Joined as the 12th employee, now over 40.</li>
+        <li>Scaled team from 0 to 9 people. Joined as the 12th employee, now over 40.</li>
         <li>Architected a deep learning pipeline that converts floor plans to 3D RF models.</li>
         <li>Technologies: React, Node.js, WebGL, Python, PyTorch, C++, Rust.</li>
       </ul>

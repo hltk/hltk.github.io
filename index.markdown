@@ -9,7 +9,7 @@ hide_title: true
     <div class="intro-text">
       <p>I'm a passionate product builder, <strong>IOI</strong> Silver Medalist, and <strong>NCPC</strong> Champion.</p>
       
-      <p>Currently, I lead the machine learning team at <a href="https://hamina.com/">Hamina Wireless</a>, where we're building a modern, web‑based solution for wireless network design, validation, and troubleshooting.</p>
+      <p>Currently, I'm a Founding Engineer at <a href="https://parahelp.com/">Parahelp</a>. Previously, I led the machine learning team at <a href="https://hamina.com/">Hamina Wireless</a>.</p>
       
       <p>I graduated from Aalto University with a BSc in Mathematics (5.0 GPA). I have co-authored two peer-reviewed articles on influence and disease diffusion in social networks.</p>
 
