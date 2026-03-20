@@ -13,7 +13,7 @@ hide_title: true
       
       <p>I graduated from Aalto University with a BSc in Mathematics (5.0 GPA). I have co-authored two peer-reviewed articles on influence and disease diffusion in social networks.</p>
 
-      <p>I coach Finland's IOI team, developing problem sets, organizing training camps, and co-led Team Finland at BOI 2023 and IOI 2025.</p>
+      <p>I coached Finland's IOI team, developing problem sets, organizing training camps, and co-led Team Finland at BOI 2023 and IOI 2025.</p>
     </div>
 
     <div class="featured-image featured-image--polaroid">

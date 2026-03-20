@@ -162,7 +162,7 @@ hide_title: true
           <p class="resume-position">Competitive Programming Coach</p>
         </div>
         <div class="resume-right-col">
-          <span class="resume-date">Oct 2022 – Present</span>
+          <span class="resume-date">Oct 2022 – Jan 2026</span>
           <span class="resume-location">Helsinki, Finland</span>
         </div>
       </div>
