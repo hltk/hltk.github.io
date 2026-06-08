@@ -18,7 +18,7 @@ hide_title: true
 
     <div class="featured-image featured-image--polaroid">
       <figure class="project-polaroid" role="presentation">
-        <img src="/assets/images/pmv.jpeg" alt="Henrik Aalto" />
+        <img src="/assets/images/p.jpeg" alt="Henrik Aalto" />
       </figure>
     </div>
 
