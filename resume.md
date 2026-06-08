@@ -17,6 +17,7 @@ hide_title: true
         </div>
         <div class="resume-right-col">
           <span class="resume-date">Feb 2026 – Present</span>
+          <span class="resume-location">San Francisco, USA</span>
         </div>
       </div>
     </div>
